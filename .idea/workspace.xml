@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4acc0be8-fe18-49b7-a25d-81a6c1f80a23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MOGD101-02-multiprocessamento.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MOGD101-04-multiprocessamento.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/007.csv" beforeDir="false" afterPath="$PROJECT_DIR$/007.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/007.png" beforeDir="false" afterPath="$PROJECT_DIR$/007.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03.png" beforeDir="false" afterPath="$PROJECT_DIR$/03.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/101_0,4_0,07.csv" beforeDir="false" afterPath="$PROJECT_DIR$/101_0,4_0,07.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/101_0,4_0,22.csv" beforeDir="false" afterPath="$PROJECT_DIR$/101_0,4_0,22.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/101_0,4_0,48.csv" beforeDir="false" afterPath="$PROJECT_DIR$/101_0,4_0,48.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GerarImagem.py" beforeDir="false" afterPath="$PROJECT_DIR$/GerarImagem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD101-02-multiprocessamento.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD101-02-multiprocessamento.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD101-04-multiprocessamento.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD101-04-multiprocessamento.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580156466904</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Inicial">
+      <created>1580326704335</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580326704335</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
