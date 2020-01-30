@@ -1266,7 +1266,7 @@ if __name__ == '__main__':
     print(len(results[2][0]))
     print("Best:", results[2][0])
 
-    teste = [1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
+    teste = [1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1]
     #my_evaluate(teste[0])
     dataFrame['label'] = teste
     robjects.globalenv['dataFrame'] = dataFrame
@@ -1275,10 +1275,10 @@ if __name__ == '__main__':
 
     # Criando o arquivo rotulado
     # Usar esse arquivo no classificador
-    dataFrame.to_csv("007.csv")
+    dataFrame.to_csv("2.csv")
     dataFrame.head(N_ATTRIBUTES)
 
-    df = pd.read_csv("007.csv")
+    df = pd.read_csv("2.csv")
     colors = {0: 'red', 1: 'blue'}
     markers = {0: '+', 1: '_'}
     fig, ax = plt.subplots()

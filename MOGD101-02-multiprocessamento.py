@@ -1244,7 +1244,7 @@ toolbox.register("individual", tools.initRepeat, creator.Individual, toolbox.att
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 toolbox.register("evaluate", my_evaluate)
 toolbox.register("mate", tools.cxTwoPoint)
-toolbox.register("mutate", tools.mutShuffleIndexes, indpb=0.01)
+toolbox.register("mutate", tools.mutShuffleIndexes, indpb=0.9)
 toolbox.register("select", tools.selNSGA3, ref_points=ref_points)
 
 def main():
@@ -1260,7 +1260,7 @@ def main():
     stats.register("min", np.min)
     stats.register("max", np.max)
 
-    pop, log = algorithms.eaSimple(pop, toolbox, cxpb=0.9, mutpb=0.2, ngen=15000,
+    pop, log = algorithms.eaSimple(pop, toolbox, cxpb=0.9, mutpb=0.9, ngen=50000,
                                    stats=stats, halloffame=hof, verbose=True)
     return pop, log, hof
 
