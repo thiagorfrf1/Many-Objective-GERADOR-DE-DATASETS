@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import random
 import matplotlib.pyplot as plt
+import pickle
 
 from deap import base
 from deap import creator
@@ -26,15 +27,17 @@ P = [12]
 SCALES = [1]
 
 NGEN = 20
-CXPB = 0.2
+CXPB = 0.5
 MUTPB = 0.2
+INDPB = 0.2
+POP = 20
+filename = "NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
+globalBalance = 0.25
+globalLinear = 0.25
+globalN1 = 0.25
+globalN2 = 0.25
 
-globalBalance = 0.48
-globalLinear = 0.07
-globalN1 = 0.07
-globalN2 = 0.07
-MU = 50
-
+dic = {"Rotulo": "Valores"}
 
 # reference points
 ref_points = [tools.uniform_reference_points(NOBJ, p, s) for p, s in zip(P, SCALES)]
@@ -1168,6 +1171,35 @@ stringr_c = STAP(string, "stringr_c")
 stringr_c._rpy2r.keys()
 
 
+def print_evaluate(individual):
+    dataFrame['label'] = individual
+    robjects.globalenv['dataFrame'] = dataFrame
+    fmla = Formula('label ~ .')
+
+    ## -- linearity
+    linearityVector = stringr_c.linearity_formula(fmla, dataFrame, measures="L2", summary="return")
+    linearity = linearityVector.rx(1)
+    fitness = abs(globalLinear - linearity[0][0])
+
+    ## -- neighborhood N1
+    n1Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N1", summary="return")
+    f1 = n1Vector.rx(1)
+    fitness2 = abs(globalN1 - f1[0][0])
+
+    ## -- neighborhood N2
+    n2Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N2", summary="return")
+    n2 = n2Vector.rx(1)
+    fitness3 = abs(globalN2 - n2[0][0])
+
+    ##imbalance
+    imbalanceVector = stringr_c.balance_formula(fmla, dataFrame, measures="C2", summary="return")
+    imbalance = imbalanceVector.rx(1)
+    fitness4 = abs(globalBalance - imbalance[0][0])
+
+    ## --
+    return (imbalance[0][0]), (linearity[0][0]), (f1[0][0]), (n2[0][0]),
+
+
 def my_evaluate(individual):
     dataFrame['label'] = individual
     robjects.globalenv['dataFrame'] = dataFrame
@@ -1211,7 +1243,7 @@ toolbox.register("individual", tools.initRepeat, creator.Individual, toolbox.att
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 toolbox.register("evaluate", my_evaluate)
 toolbox.register("mate", tools.cxTwoPoint)
-toolbox.register("mutate", tools.mutShuffleIndexes, indpb=0.9)
+toolbox.register("mutate", tools.mutShuffleIndexes, indpb=INDPB)
 toolbox.register("select", tools.selNSGA3, ref_points=ref_points)
 
 def main(seed=None):
@@ -1227,7 +1259,7 @@ def main(seed=None):
     logbook = tools.Logbook()
     logbook.header = "gen", "evals", "std", "min", "avg", "max"
 
-    pop = toolbox.population(MU)
+    pop = toolbox.population(POP)
 
     # Evaluate the individuals with an invalid fitness
     invalid_ind = [ind for ind in pop if not ind.fitness.valid]
@@ -1250,10 +1282,20 @@ def main(seed=None):
         fitnesses = toolbox.map(toolbox.evaluate, invalid_ind)
         for ind, fit in zip(invalid_ind, fitnesses):
             ind.fitness.values = fit
-
         # Select the next generation population from parents and offspring
-        pop = toolbox.select(pop + offspring, 100)
+        pop = toolbox.select(pop + offspring, POP)
 
+        for x in range(POP):
+            print("POP"+str(x))
+            print(pop[x])
+            print("Fitness")
+            print(print_evaluate(pop[x]))
+            dic[print_evaluate(pop[x])] = pop[x]
+            outfile = open(filename, 'wb')
+            pickle.dump(dic, outfile)
+            outfile.close()
+        print("Dicionario")
+        print(dic)
         # Compile statistics about the new population
         record = stats.compile(pop)
         logbook.record(gen=gen, evals=len(invalid_ind), **record)
@@ -1269,6 +1311,12 @@ if __name__ == '__main__':
     dataFrame = pd.read_csv(str(N_ATTRIBUTES) + '.csv')
     dataFrame = dataFrame.drop('c0', axis=1)
     results = main()
+    infile = open(filename, 'rb')
+    new_dict = pickle.load(infile)
+    print("NEW DICT")
+    print(new_dict)
+    infile.close()
+
     print("logbook")
     print(results[1])
     robjects.globalenv['dataFrame'] = dataFrame
@@ -1286,5 +1334,4 @@ if __name__ == '__main__':
     plt.rcParams['figure.figsize'] = (11, 7)
     for key, group in grouped:
         group.plot(ax=ax, kind='scatter', marker=markers[key], x='1', y='2', label=key, color=colors[key])
-
     plt.show()
