@@ -25,7 +25,7 @@ NOBJ = 4
 P = [12]
 SCALES = [1]
 
-NGEN = 1000
+NGEN = 20
 CXPB = 0.2
 MUTPB = 0.2
 
@@ -1258,7 +1258,8 @@ def main(seed=None):
         record = stats.compile(pop)
         logbook.record(gen=gen, evals=len(invalid_ind), **record)
         print("Aqui doido")
-        print(logbook.stream)
+        #print(logbook.stream)
+        print(offspring)
 
     return pop, logbook
 
@@ -1268,6 +1269,8 @@ if __name__ == '__main__':
     dataFrame = pd.read_csv(str(N_ATTRIBUTES) + '.csv')
     dataFrame = dataFrame.drop('c0', axis=1)
     results = main()
+    print("logbook")
+    print(results[1])
     robjects.globalenv['dataFrame'] = dataFrame
     dataFrame.to_csv(
         str(N_ATTRIBUTES) + '_' + str(bobj).replace('.', ',') + '_' + str(globalBalance).replace('.', ',') + '.csv',
