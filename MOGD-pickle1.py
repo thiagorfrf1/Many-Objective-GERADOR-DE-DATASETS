@@ -27,7 +27,7 @@ P = [12]
 SCALES = [1]
 
 NGEN = 5000
-CXPB = 0.5
+CXPB = 0.2
 MUTPB = 0.2
 INDPB = 0.2
 POP = 50

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4acc0be8-fe18-49b7-a25d-81a6c1f80a23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MOGD-pickle1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MultiObjetivo-GeradordeDatasets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MultiObjetivo-GeradordeDatasets.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/101_0,4_0,48.csv" beforeDir="false" afterPath="$PROJECT_DIR$/101_0,4_0,48.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MOGD-pickle.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-pickle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MOGD101-02-multiprocessamento.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD101-02-multiprocessamento.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,25 +20,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MOGD101-02-multiprocessamento.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+            <state relative-caret-position="198">
+              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
-                <element signature="e#921#31605#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOGD-pickle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+              <folding>
+                <element signature="e#25#43#0" expanded="true" />
+                <element signature="e#1046#31730#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MOGD-pickle.py">
+        <entry file="file://$PROJECT_DIR$/MOGD-pickle1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="1315" column="21" lean-forward="true" selection-start-line="1315" selection-start-column="21" selection-end-line="1315" selection-end-column="21" />
-              <folding>
-                <element signature="e#25#43#0" expanded="true" />
-                <element signature="e#919#31603#0" />
-              </folding>
+            <state relative-caret-position="162">
+              <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -91,6 +99,7 @@
       <list>
         <option value="$PROJECT_DIR$/MOGD101-02-multiprocessamento.py" />
         <option value="$PROJECT_DIR$/MOGD-pickle.py" />
+        <option value="$PROJECT_DIR$/MOGD-pickle1.py" />
       </list>
     </option>
   </component>
@@ -106,7 +115,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,6 +126,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -149,28 +158,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.MOGD-pickle">
-    <configuration name="GerarImagem" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MultiObjetivo-GeradordeDatasets" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GerarImagem.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.MOGD-pickle2">
     <configuration name="MOGD-pickle" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MultiObjetivo-GeradordeDatasets" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,6 +172,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-pickle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MOGD-pickle1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MultiObjetivo-GeradordeDatasets" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-pickle1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MOGD-pickle2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MultiObjetivo-GeradordeDatasets" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-pickle2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -234,41 +264,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MOGD101-04" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MultiObjetivo-GeradordeDatasets" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD101-04.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.MOGD101-04" />
       <item itemvalue="Python.MOGD101-04-multiprocessamento" />
       <item itemvalue="Python.MOGD101-02-multiprocessamento" />
-      <item itemvalue="Python.GerarImagem" />
       <item itemvalue="Python.MOGD-pickle" />
+      <item itemvalue="Python.MOGD-pickle1" />
+      <item itemvalue="Python.MOGD-pickle2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MOGD-pickle2" />
+        <item itemvalue="Python.MOGD-pickle1" />
         <item itemvalue="Python.MOGD-pickle" />
         <item itemvalue="Python.MOGD101-02-multiprocessamento" />
         <item itemvalue="Python.MOGD101-04-multiprocessamento" />
-        <item itemvalue="Python.GerarImagem" />
-        <item itemvalue="Python.MOGD101-04" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582606594337</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Inicial">
+      <created>1582669515318</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582669515319</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -344,21 +360,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1922" height="1027" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19050132" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32949308" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7757256" visible="true" weight="0.31336406" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.77361476" visible="true" weight="0.514977" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39976957" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49973616" weight="0.32949308" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.7651715" weight="0.3421659" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.2348285" side_tool="true" weight="0.343318" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49973616" weight="0.32949308" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.76200527" weight="0.34101382" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.22638522" side_tool="true" weight="0.514977" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49973616" weight="0.32949308" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -484,24 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GerarImagem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2736">
-          <caret line="1269" column="26" selection-start-line="1269" selection-start-column="26" selection-end-line="1269" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#1846#32530#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MOGD101-04-multiprocessamento.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22770">
-          <caret line="1298" column="43" selection-start-line="1298" selection-start-column="43" selection-end-line="1298" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../anaconda3/envs/Many-Objective-GERADOR-DE-DATASETS/condaenv/lib/python3.7/site-packages/rpy2/robjects/pandas2ri.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -523,36 +520,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NGEN=20POP=20CXPB=0.2MUTPB=0.2INDPB=0.2">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NGEN=20-POP=20-CXPB=0.2-MUTPB=0.2-INDPB=0.2">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/NGEN=20POP=20CXPB=0.2MUTPB=0.2INDPB=0.2" />
+    <entry file="file://$PROJECT_DIR$/NGEN=20-POP=20-CXPB=0.2-MUTPB=0.2-INDPB=0.2" />
+    <entry file="file://$PROJECT_DIR$/NGEN=20-POP=20-CXPB=0.5-MUTPB=0.2-INDPB=0.2" />
     <entry file="file://$PROJECT_DIR$/MOGD101-02-multiprocessamento.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        <state relative-caret-position="198">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
-            <element signature="e#921#31605#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NGEN=20-POP=20-CXPB=0.5-MUTPB=0.2-INDPB=0.2">
+    <entry file="file://$PROJECT_DIR$/GerarImagem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-434" />
+        <state relative-caret-position="2736">
+          <caret line="1269" column="26" selection-start-line="1269" selection-start-column="26" selection-end-line="1269" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#1846#32530#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOGD101-04-multiprocessamento.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22770">
+          <caret line="1298" column="43" selection-start-line="1298" selection-start-column="43" selection-end-line="1298" selection-end-column="43" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MOGD-pickle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="1315" column="21" lean-forward="true" selection-start-line="1315" selection-start-column="21" selection-end-line="1315" selection-end-column="21" />
+        <state relative-caret-position="121">
+          <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
-            <element signature="e#919#31603#0" />
+            <element signature="e#1046#31730#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOGD-pickle1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
         </state>
       </provider>
     </entry>
