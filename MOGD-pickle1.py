@@ -1293,6 +1293,7 @@ def main(seed=None):
         # Compile statistics about the new population
         record = stats.compile(pop)
         logbook.record(gen=gen, evals=len(invalid_ind), **record)
+        print(logbook.stream)
     return pop, logbook
 
 if __name__ == '__main__':
