@@ -1286,23 +1286,13 @@ def main(seed=None):
         pop = toolbox.select(pop + offspring, POP)
 
         for x in range(POP):
-            print("POP"+str(x))
-            print(pop[x])
-            print("Fitness")
-            print(print_evaluate(pop[x]))
             dic[print_evaluate(pop[x])] = pop[x]
             outfile = open(filename, 'wb')
             pickle.dump(dic, outfile)
             outfile.close()
-        print("Dicionario")
-        print(dic)
         # Compile statistics about the new population
         record = stats.compile(pop)
         logbook.record(gen=gen, evals=len(invalid_ind), **record)
-        print("Aqui doido")
-        #print(logbook.stream)
-        print(offspring)
-
     return pop, logbook
 
 if __name__ == '__main__':
