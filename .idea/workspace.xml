@@ -1,134 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4acc0be8-fe18-49b7-a25d-81a6c1f80a23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MOGD-pickle3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MOGD-pickle4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NGEN=10-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.05" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.5" afterDir="false" />
+    <list default="true" id="4acc0be8-fe18-49b7-a25d-81a6c1f80a23" name="Default Changelist" comment="Inicial">
+      <change afterPath="$PROJECT_DIR$/MOGD-pickle5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MOGD-pickle.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-pickle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MOGD-pickle1.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-pickle1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MOGD-pickle2.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-pickle2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/101_0,4_0,25.csv" beforeDir="false" afterPath="$PROJECT_DIR$/101_0,4_0,25.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGEN=10-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.2-MUTPB=0.2-INDPB=0.2" beforeDir="false" afterPath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.2-MUTPB=0.2-INDPB=0.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.05" beforeDir="false" afterPath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.05" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.2" beforeDir="false" afterPath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.5" beforeDir="false" afterPath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.7-MUTPB=0.2-INDPB=0.2" beforeDir="false" afterPath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.7-MUTPB=0.2-INDPB=0.2" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/venv/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MOGD-pickle.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="1295" column="29" selection-start-line="1295" selection-start-column="29" selection-end-line="1295" selection-end-column="29" />
-              <folding>
-                <element signature="e#25#43#0" expanded="true" />
-                <element signature="e#1046#31730#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MOGD-pickle3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="1295" column="29" selection-start-line="1295" selection-start-column="29" selection-end-line="1295" selection-end-column="29" />
-              <folding>
-                <element signature="e#1046#31730#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MOGD-pickle4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="1295" column="29" selection-start-line="1295" selection-start-column="29" selection-end-line="1295" selection-end-column="29" />
-              <folding>
-                <element signature="e#1047#31731#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MOGD-pickle1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="1295" column="29" selection-start-line="1295" selection-start-column="29" selection-end-line="1295" selection-end-column="29" />
-              <folding>
-                <element signature="e#1046#31730#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MOGD-pickle2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-43">
-              <caret line="1291" column="27" selection-start-line="1291" selection-start-column="27" selection-end-line="1291" selection-end-column="27" />
-              <folding>
-                <element signature="e#1046#31730#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MOGD3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="1255" column="24" selection-start-line="1255" selection-start-column="24" selection-end-line="1255" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../anaconda3/envs/Many-Objective-GERADOR-DE-DATASETS/conda/lib/python3.5/site-packages/deap/tools/support.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="578" selection-start-line="578" selection-end-line="578" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GerarImagem.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2736">
-              <caret line="1269" column="26" selection-start-line="1269" selection-start-column="26" selection-end-line="1269" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#1846#32530#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MOGD101-04-multiprocessamento.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22770">
-              <caret line="1298" column="43" selection-start-line="1298" selection-start-column="43" selection-end-line="1298" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -146,23 +33,13 @@
       <find>aqui</find>
       <find>hof</find>
       <find>file</find>
+      <find>filen</find>
+      <find>dump</find>
+      <find>infile</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/MOGD101-02-multiprocessamento.py" />
-        <option value="$PROJECT_DIR$/MOGD-pickle4.py" />
-        <option value="$PROJECT_DIR$/MOGD-pickle3.py" />
-        <option value="$PROJECT_DIR$/MOGD-pickle.py" />
-        <option value="$PROJECT_DIR$/MOGD-pickle1.py" />
-        <option value="$PROJECT_DIR$/MOGD-pickle2.py" />
-        <option value="$PROJECT_DIR$/MOGD-pickle-hof.py" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="960" />
@@ -171,25 +48,6 @@
   </component>
   <component name="ProjectId" id="1U4xylkaK05zEWxZgdfNjwQsvQB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Many-Objective-GERADOR-DE-DATASETS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Many-Objective-GERADOR-DE-DATASETS" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -199,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -207,19 +65,7 @@
       <recent name="C:\Users\Thiago Rodrigues\PycharmProjects\MultiObjetivo-GeradordeDatasets" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.MOGD-pickle-hof">
+  <component name="RunManager" selected="Python.READ-pickle">
     <configuration name="MOGD-pickle-hof" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MultiObjetivo-GeradordeDatasets" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -233,48 +79,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-pickle-hof.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MOGD-pickle1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MultiObjetivo-GeradordeDatasets" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-pickle1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MOGD-pickle2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MultiObjetivo-GeradordeDatasets" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-pickle2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -325,20 +129,62 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="MOGD-pickle5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MultiObjetivo-GeradordeDatasets" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-pickle5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="READ-pickle" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MultiObjetivo-GeradordeDatasets" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/READ-pickle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.MOGD-pickle1" />
-      <item itemvalue="Python.MOGD-pickle2" />
       <item itemvalue="Python.MOGD-pickle3" />
       <item itemvalue="Python.MOGD-pickle4" />
       <item itemvalue="Python.MOGD-pickle-hof" />
+      <item itemvalue="Python.MOGD-pickle5" />
+      <item itemvalue="Python.READ-pickle" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.READ-pickle" />
+        <item itemvalue="Python.MOGD-pickle5" />
         <item itemvalue="Python.MOGD-pickle-hof" />
         <item itemvalue="Python.MOGD-pickle4" />
         <item itemvalue="Python.MOGD-pickle3" />
-        <item itemvalue="Python.MOGD-pickle2" />
-        <item itemvalue="Python.MOGD-pickle1" />
       </list>
     </recent_temporary>
   </component>
@@ -428,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582678059519</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Inicial">
+      <created>1582687021363</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1582687021363</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -439,28 +292,6 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-1" y="-1" width="1922" height="1027" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28865436" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32949308" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.77361476" visible="true" weight="0.2845622" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39976957" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49973616" weight="0.32949308" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49973616" weight="0.32949308" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.76200527" weight="0.34101382" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.22638522" side_tool="true" weight="0.514977" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49973616" weight="0.32949308" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inicial" />
@@ -487,17 +318,19 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="643" y="251" width="624" height="533" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1579668328286" />
-    <state x="429" y="117" width="1052" height="801" key="CommitChangelistDialog2" timestamp="1580353776797">
-      <screen x="0" y="0" width="1920" height="1043" />
+    <state x="343" y="0" width="1052" height="801" key="CommitChangelistDialog2" timestamp="1582856441978">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="343" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582856441978" />
     <state x="429" y="117" width="1052" height="801" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1580353776797" />
     <state x="503" y="177" key="EnvironmentVariablesDialog" timestamp="1578542568019">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="503" y="177" key="EnvironmentVariablesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578542568019" />
-    <state x="743" y="278" width="424" height="479" key="FileChooserDialogImpl" timestamp="1579839999064">
-      <screen x="0" y="0" width="1920" height="1043" />
+    <state x="594" y="220" width="424" height="479" key="FileChooserDialogImpl" timestamp="1582856399238">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="594" y="220" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582856399238" />
     <state x="743" y="278" width="424" height="479" key="FileChooserDialogImpl/0.0.1920.1043@0.0.1920.1043" timestamp="1579839999064" />
     <state width="1899" height="265" key="GridCell.Tab.0.bottom" timestamp="1580353013134">
       <screen x="0" y="0" width="1920" height="1043" />
@@ -543,173 +376,20 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1364" height="242" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575437378946" />
-    <state x="464" y="155" key="SettingsEditor" timestamp="1579752720994">
-      <screen x="0" y="0" width="1920" height="1043" />
+    <state x="371" y="110" key="SettingsEditor" timestamp="1582856403765">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="371" y="110" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582856403765" />
     <state x="464" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578597752826" />
     <state x="464" y="155" key="SettingsEditor/0.0.1920.1043@0.0.1920.1043" timestamp="1579752720994" />
     <state x="555" y="256" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1580353754251">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="555" y="256" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1043@0.0.1920.1043" timestamp="1580353754251" />
-    <state x="643" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1578597630718">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="514" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1582856321983">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="514" y="275" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582856321983" />
     <state x="643" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578597630718" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file:///usr/lib/python3.5/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ve/lib/python3.7/site-packages/rpy2/robjects/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/ve/lib/python3.7/site-packages/rpy2/robjects/functions.py" />
-    <entry file="file://$PROJECT_DIR$/ve/lib/python3.7/site-packages/rpy2/robjects/help.py" />
-    <entry file="file://$PROJECT_DIR$/ve/lib/python3.7/site-packages/rpy2/rinterface_lib/conversion.py" />
-    <entry file="file://$PROJECT_DIR$/ve/lib/python3.7/site-packages/rpy2/rinterface.py" />
-    <entry file="file://$PROJECT_DIR$/ve/lib/python3.7/site-packages/rpy2/rinterface_lib/_rinterface_capi.py" />
-    <entry file="file://$PROJECT_DIR$/dogs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.PyCharmCE2019.1/system/python_stubs/1265471952/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="5744" column="6" selection-start-line="5744" selection-start-column="6" selection-end-line="5744" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../anaconda3/envs/Many-Objective-GERADOR-DE-DATASETS/condaenv/lib/python3.7/site-packages/rpy2/robjects/pandas2ri.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../anaconda3/envs/Many-Objective-GERADOR-DE-DATASETS/condaenv/lib/python3.7/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../anaconda3/envs/Many-Objective-GERADOR-DE-DATASETS/condaenv/lib/python3.7/site-packages/deap/tools/emo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="553" selection-start-line="553" selection-end-line="553" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NGEN=20POP=20CXPB=0.2MUTPB=0.2INDPB=0.2" />
-    <entry file="file://$PROJECT_DIR$/NGEN=20-POP=20-CXPB=0.2-MUTPB=0.2-INDPB=0.2" />
-    <entry file="file://$PROJECT_DIR$/NGEN=20-POP=20-CXPB=0.5-MUTPB=0.2-INDPB=0.2" />
-    <entry file="file://$PROJECT_DIR$/MOGD101-02-multiprocessamento.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-          <folding>
-            <element signature="e#25#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GerarImagem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2736">
-          <caret line="1269" column="26" selection-start-line="1269" selection-start-column="26" selection-end-line="1269" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#1846#32530#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MOGD101-04-multiprocessamento.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22770">
-          <caret line="1298" column="43" selection-start-line="1298" selection-start-column="43" selection-end-line="1298" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MOGD-pickle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="1295" column="29" selection-start-line="1295" selection-start-column="29" selection-end-line="1295" selection-end-column="29" />
-          <folding>
-            <element signature="e#25#43#0" expanded="true" />
-            <element signature="e#1046#31730#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MOGD-pickle3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="1295" column="29" selection-start-line="1295" selection-start-column="29" selection-end-line="1295" selection-end-column="29" />
-          <folding>
-            <element signature="e#1046#31730#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MOGD-pickle4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="1295" column="29" selection-start-line="1295" selection-start-column="29" selection-end-line="1295" selection-end-column="29" />
-          <folding>
-            <element signature="e#1047#31731#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MOGD-pickle1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="1295" column="29" selection-start-line="1295" selection-start-column="29" selection-end-line="1295" selection-end-column="29" />
-          <folding>
-            <element signature="e#1046#31730#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../anaconda3/envs/Many-Objective-GERADOR-DE-DATASETS/conda/lib/python3.5/site-packages/deap/tools/support.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="578" selection-start-line="578" selection-end-line="578" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MOGD3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="1255" column="24" selection-start-line="1255" selection-start-column="24" selection-end-line="1255" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MOGD-pickle-hof.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="1299" column="23" lean-forward="true" selection-start-line="1299" selection-start-column="23" selection-end-line="1299" selection-end-column="23" />
-          <folding>
-            <element signature="e#1046#31730#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MOGD-pickle2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43">
-          <caret line="1291" column="27" selection-start-line="1291" selection-start-column="27" selection-end-line="1291" selection-end-column="27" />
-          <folding>
-            <element signature="e#1046#31730#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
