@@ -1307,4 +1307,3 @@ if __name__ == '__main__':
 
     plt.savefig('03.png')
     plt.show()
-    pool.close()

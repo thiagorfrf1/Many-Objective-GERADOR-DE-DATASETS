@@ -27,9 +27,9 @@ P = [12]
 SCALES = [1]
 
 NGEN = 5000
-CXPB = 0.5
+CXPB = 0.7
 MUTPB = 0.2
-INDPB = 0.2
+INDPB = 0.05
 POP = 50
 filename = "NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
 globalBalance = 0.25

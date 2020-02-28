@@ -2,15 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4acc0be8-fe18-49b7-a25d-81a6c1f80a23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MOGD-pickle5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.2-MUTPB=0.2-INDPB=0.5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/READ-pickle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MultiObjetivo-GeradordeDatasets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MultiObjetivo-GeradordeDatasets.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/101_0,4_0,25.csv" beforeDir="false" afterPath="$PROJECT_DIR$/101_0,4_0,25.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NGEN=10-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.2-MUTPB=0.2-INDPB=0.2" beforeDir="false" afterPath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.2-MUTPB=0.2-INDPB=0.2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.05" beforeDir="false" afterPath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.05" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/501.csv" beforeDir="false" afterPath="$PROJECT_DIR$/501.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/1001.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/1001.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/1001_0,4_0.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/1001_0,4_0.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/1001_0,4_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/1001_0,4_1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/1001_0,4_11.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/1001_0,4_11.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/1001_0,4_111.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/1001_0,4_111.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/1001_0,4_11111.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/1001_0,4_11111.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/1001_0,4_2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/1001_0,4_2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/101.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/101.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/101_0,4_0,19.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/101_0,4_0,19.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/501.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/501.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_0,0.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_0,0.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_0,19.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_0,19.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_0,5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_0,5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_0,9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_0,9.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_0.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_0.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos 2 Atributos/501_0,4_5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD-pickle.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-pickle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD-pickle1.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-pickle1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD-pickle2.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-pickle2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD-pickle3.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-pickle3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD-pickle4.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-pickle4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD101-01.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD101-01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD101-02-multiprocessamento.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD101-02-multiprocessamento.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD101-02.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD101-02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD101-03.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD101-03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD101-04-multiprocessamento.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD101-04-multiprocessamento.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD101-04.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD101-04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD101-048.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD101-048.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD101.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD101.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD2.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD3.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD4.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.2" beforeDir="false" afterPath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.5" beforeDir="false" afterPath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.5-MUTPB=0.2-INDPB=0.5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.7-MUTPB=0.2-INDPB=0.2" beforeDir="false" afterPath="$PROJECT_DIR$/NGEN=5000-POP=50-CXPB=0.7-MUTPB=0.2-INDPB=0.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primeiras imagens 500/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Primeiras imagens 500/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primeiras imagens 500/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Primeiras imagens 500/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primeiras imagens 500/imagem-1000-linearidade zero e imbalance zero - Copia.png" beforeDir="false" afterPath="$PROJECT_DIR$/Primeiras imagens 500/imagem-1000-linearidade zero e imbalance zero - Copia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primeiras imagens 500/imagem.png" beforeDir="false" afterPath="$PROJECT_DIR$/Primeiras imagens 500/imagem.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primeiras imagens 500/imagem3classes.png" beforeDir="false" afterPath="$PROJECT_DIR$/Primeiras imagens 500/imagem3classes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/easy_install" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/easy_install-3.5" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/easy_install-3.5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/pip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/pip3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/pip3.5" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/pip3.5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/python" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/python" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/python3" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/python3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/bin/python3.5" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/python3.5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/lib64" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib64" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,27 +72,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>mu</find>
-      <find>pop</find>
-      <find>indp</find>
-      <find>MU</find>
-      <find>aqui</find>
-      <find>hof</find>
-      <find>file</find>
-      <find>filen</find>
-      <find>dump</find>
-      <find>infile</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1025" />
   </component>
   <component name="ProjectId" id="1U4xylkaK05zEWxZgdfNjwQsvQB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,7 +86,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -65,8 +94,8 @@
       <recent name="C:\Users\Thiago Rodrigues\PycharmProjects\MultiObjetivo-GeradordeDatasets" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.READ-pickle">
-    <configuration name="MOGD-pickle-hof" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.MOGD-pickle2">
+    <configuration name="MOGD-pickle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MultiObjetivo-GeradordeDatasets" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -78,7 +107,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-pickle-hof.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-pickle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MOGD-pickle2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MultiObjetivo-GeradordeDatasets" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-pickle2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,27 +150,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-pickle3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MOGD-pickle4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MultiObjetivo-GeradordeDatasets" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-pickle4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,18 +202,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.MOGD-pickle3" />
-      <item itemvalue="Python.MOGD-pickle4" />
-      <item itemvalue="Python.MOGD-pickle-hof" />
       <item itemvalue="Python.MOGD-pickle5" />
       <item itemvalue="Python.READ-pickle" />
+      <item itemvalue="Python.MOGD-pickle" />
+      <item itemvalue="Python.MOGD-pickle2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MOGD-pickle2" />
+        <item itemvalue="Python.MOGD-pickle" />
+        <item itemvalue="Python.MOGD-pickle3" />
         <item itemvalue="Python.READ-pickle" />
         <item itemvalue="Python.MOGD-pickle5" />
-        <item itemvalue="Python.MOGD-pickle-hof" />
-        <item itemvalue="Python.MOGD-pickle4" />
-        <item itemvalue="Python.MOGD-pickle3" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582856584749</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Inicial">
+      <created>1582856674014</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1582856674014</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -317,6 +353,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="290" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1578542571108" />
+    <state x="404" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582865687892">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="404" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1582865687892" />
     <state x="615" y="135" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1578542545200">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -325,10 +365,10 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="643" y="251" width="624" height="533" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1579668328286" />
-    <state x="343" y="0" width="1052" height="801" key="CommitChangelistDialog2" timestamp="1582856598453">
+    <state x="343" y="0" width="1052" height="801" key="CommitChangelistDialog2" timestamp="1582856672371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="343" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582856598453" />
+    <state x="343" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582856672371" />
     <state x="429" y="117" width="1052" height="801" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1580353776797" />
     <state x="503" y="177" key="EnvironmentVariablesDialog" timestamp="1578542568019">
       <screen x="0" y="0" width="1536" height="824" />
@@ -339,65 +379,65 @@
     </state>
     <state x="594" y="220" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582856399238" />
     <state x="743" y="278" width="424" height="479" key="FileChooserDialogImpl/0.0.1920.1043@0.0.1920.1043" timestamp="1579839999064" />
-    <state width="1899" height="265" key="GridCell.Tab.0.bottom" timestamp="1580353013134">
-      <screen x="0" y="0" width="1920" height="1043" />
+    <state width="1515" height="163" key="GridCell.Tab.0.bottom" timestamp="1582865606395">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="153" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578545653067" />
+    <state width="1515" height="163" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582865606395" />
     <state width="1899" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578749689324" />
     <state width="1899" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1580353013134" />
     <state width="1899" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1047@0.0.1920.1047" timestamp="1579245001908" />
-    <state width="1899" height="265" key="GridCell.Tab.0.center" timestamp="1580353013131">
-      <screen x="0" y="0" width="1920" height="1043" />
+    <state width="1515" height="163" key="GridCell.Tab.0.center" timestamp="1582865606395">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="153" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578545653067" />
+    <state width="1515" height="163" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582865606395" />
     <state width="1899" height="263" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578749689321" />
     <state width="1899" height="265" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1580353013131" />
     <state width="1899" height="265" key="GridCell.Tab.0.center/0.0.1920.1047@0.0.1920.1047" timestamp="1579245001907" />
-    <state width="1899" height="265" key="GridCell.Tab.0.left" timestamp="1580353013126">
-      <screen x="0" y="0" width="1920" height="1043" />
+    <state width="1515" height="163" key="GridCell.Tab.0.left" timestamp="1582865606395">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="153" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578545653066" />
+    <state width="1515" height="163" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582865606395" />
     <state width="1899" height="263" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578749689320" />
     <state width="1899" height="265" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1580353013126" />
     <state width="1899" height="265" key="GridCell.Tab.0.left/0.0.1920.1047@0.0.1920.1047" timestamp="1579245001907" />
-    <state width="1899" height="265" key="GridCell.Tab.0.right" timestamp="1580353013134">
-      <screen x="0" y="0" width="1920" height="1043" />
+    <state width="1515" height="163" key="GridCell.Tab.0.right" timestamp="1582865606395">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="153" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578545653067" />
+    <state width="1515" height="163" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582865606395" />
     <state width="1899" height="263" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578749689323" />
     <state width="1899" height="265" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1580353013134" />
     <state width="1899" height="265" key="GridCell.Tab.0.right/0.0.1920.1047@0.0.1920.1047" timestamp="1579245001908" />
-    <state width="1364" height="242" key="GridCell.Tab.1.bottom" timestamp="1575437378946">
+    <state width="1364" height="242" key="GridCell.Tab.1.bottom" timestamp="1582864761238">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1364" height="242" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575437378946" />
-    <state width="1364" height="242" key="GridCell.Tab.1.center" timestamp="1575437378945">
+    <state width="1364" height="242" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582864761238" />
+    <state width="1364" height="242" key="GridCell.Tab.1.center" timestamp="1582864761238">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1364" height="242" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575437378945" />
-    <state width="1364" height="242" key="GridCell.Tab.1.left" timestamp="1575437378945">
+    <state width="1364" height="242" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582864761238" />
+    <state width="1364" height="242" key="GridCell.Tab.1.left" timestamp="1582864761238">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1364" height="242" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575437378945" />
-    <state width="1364" height="242" key="GridCell.Tab.1.right" timestamp="1575437378946">
+    <state width="1364" height="242" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582864761238" />
+    <state width="1364" height="242" key="GridCell.Tab.1.right" timestamp="1582864761238">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1364" height="242" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575437378946" />
-    <state x="371" y="110" key="SettingsEditor" timestamp="1582856403765">
+    <state width="1364" height="242" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582864761238" />
+    <state x="371" y="110" key="SettingsEditor" timestamp="1582863844333">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="371" y="110" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582856403765" />
+    <state x="371" y="110" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582863844333" />
     <state x="464" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578597752826" />
     <state x="464" y="155" key="SettingsEditor/0.0.1920.1043@0.0.1920.1043" timestamp="1579752720994" />
-    <state x="444" y="202" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1582856616373">
+    <state x="444" y="202" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1582856717951">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="444" y="202" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582856616373" />
+    <state x="444" y="202" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582856717951" />
     <state x="555" y="256" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1043@0.0.1920.1043" timestamp="1580353754251" />
-    <state x="514" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1582856321983">
+    <state x="514" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1582857530689">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="514" y="275" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582856321983" />
+    <state x="514" y="275" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582857530689" />
     <state x="643" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578597630718" />
   </component>
 </project>
