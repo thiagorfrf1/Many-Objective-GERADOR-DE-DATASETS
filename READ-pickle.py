@@ -9,7 +9,6 @@ import pickle
 from deap import base
 from deap import creator
 
-from topsis import topsis
 import rpy2.robjects as robjects
 
 from rpy2.robjects import pandas2ri
@@ -29,18 +28,19 @@ NOBJ = 4
 P = [12]
 SCALES = [1]
 
-NGEN = 5000
-CXPB = 0.2
+NGEN = 1000
+CXPB = 0.5
 MUTPB = 0.2
-INDPB = 0.05
+INDPB = 0.2
 POP = 50
 filename = "ALL-0.07-NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
 
 
-globalBalance = 0.07
-globalLinear = 0.07
-globalN1 = 0.07
-globalN2 = 0.07
+
+globalBalance = 0.25
+globalLinear = 0.25
+globalN1 = 0.25
+globalN2 = 0.25
 
 
 dic = {"Rotulo": "Valores"}

@@ -8,6 +8,7 @@ import pickle
 
 from deap import base
 from deap import creator
+
 from deap import tools
 from deap import algorithms
 
@@ -26,13 +27,16 @@ NOBJ = 4
 P = [12]
 SCALES = [1]
 
-NGEN = 5000
-CXPB = 0.2
+NGEN = 1000
+CXPB = 0.5
 MUTPB = 0.2
 INDPB = 0.05
 POP = 50
-filename = "ALL-0.07-NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
-globalBalance = 0.07
+filename = "ALL-0.07-0.48-NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
+
+
+
+globalBalance = 0.48
 globalLinear = 0.07
 globalN1 = 0.07
 globalN2 = 0.07
