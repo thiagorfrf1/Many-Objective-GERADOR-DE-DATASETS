@@ -26,19 +26,18 @@ NOBJ = 4
 P = [12]
 SCALES = [1]
 
-NGEN = 100
-CXPB = 0.2
+NGEN = 5000
+CXPB = 0.5
 MUTPB = 0.2
-INDPB = 0.2
+INDPB = 0.05
 POP = 50
 filename = "NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
-
 globalBalance = 0.25
 globalLinear = 0.25
 globalN1 = 0.25
 globalN2 = 0.25
 
-dic = {}
+dic = {"Rotulo": "Valores"}
 
 # reference points
 ref_points = [tools.uniform_reference_points(NOBJ, p, s) for p, s in zip(P, SCALES)]
@@ -1286,7 +1285,7 @@ def main(seed=None):
         # Select the next generation population from parents and offspring
         pop = toolbox.select(pop + offspring, POP)
 
-        for x in range(len(offspring)):
+        for x in range(POP):
             dic[print_evaluate(pop[x])] = pop[x]
             outfile = open(filename, 'wb')
             pickle.dump(dic, outfile)

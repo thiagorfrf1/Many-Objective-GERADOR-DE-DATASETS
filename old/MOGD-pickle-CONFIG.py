@@ -26,12 +26,12 @@ NOBJ = 4
 P = [12]
 SCALES = [1]
 
-NGEN = 100
-CXPB = 0.2
-MUTPB = 0.2
+NGEN = 500
+CXPB = 0.7
+MUTPB = 0.5
 INDPB = 0.2
 POP = 50
-filename = "NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
+filename = "mutate=Uniform-cros=cxtwopoints-NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
 
 globalBalance = 0.25
 globalLinear = 0.25
@@ -1244,7 +1244,7 @@ toolbox.register("individual", tools.initRepeat, creator.Individual, toolbox.att
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 toolbox.register("evaluate", my_evaluate)
 toolbox.register("mate", tools.cxTwoPoint)
-toolbox.register("mutate", tools.mutShuffleIndexes, indpb=INDPB)
+toolbox.register("mutate", tools.mutUniformInt, low=RANDINT_LOW, up=RANDINT_UP, indpb=INDPB)
 toolbox.register("select", tools.selNSGA3, ref_points=ref_points)
 
 def main(seed=None):

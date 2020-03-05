@@ -28,14 +28,12 @@ NOBJ = 4
 P = [12]
 SCALES = [1]
 
-NGEN = 1000
+NGEN = 100
 CXPB = 0.5
 MUTPB = 0.2
-INDPB = 0.2
+INDPB = 0.05
 POP = 50
-filename = "ALL-0.07-NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
-
-
+filename = "NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
 
 globalBalance = 0.25
 globalLinear = 0.25

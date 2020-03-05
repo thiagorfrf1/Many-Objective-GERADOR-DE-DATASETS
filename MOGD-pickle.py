@@ -26,10 +26,10 @@ NOBJ = 4
 P = [12]
 SCALES = [1]
 
-NGEN = 500
+NGEN = 100
 CXPB = 0.2
 MUTPB = 0.2
-INDPB = 0.2
+INDPB = 0.05
 POP = 50
 filename = "NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
 

@@ -1,24 +1,39 @@
-# -*- coding: UTF-8 -*-
-
+import sys
 import numpy as np
 import pandas as pd
+import scipy.stats as stats
 import random
+import math
+import os
 import matplotlib.pyplot as plt
-import pickle
+import seaborn as sns
+import array
+
+from mpl_toolkits.mplot3d import Axes3D
+
+from sklearn.neighbors import kneighbors_graph
+from scipy.sparse.csgraph import minimum_spanning_tree
 
 from deap import base
 from deap import creator
 from deap import tools
 from deap import algorithms
 
-import rpy2.robjects as robjects
+from sklearn import preprocessing
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report,confusion_matrix
 
+import urllib.request
+import rpy2.robjects as robjects
 from rpy2.robjects import pandas2ri
 from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage as STAP
+from rpy2.robjects.packages import importr
 from rpy2.robjects import IntVector, Formula
 pandas2ri.activate()
 
-N_ATTRIBUTES = 101
+N_ATTRIBUTES = 501
 cont = 0
 bobj = 0.4
 
@@ -26,19 +41,17 @@ NOBJ = 4
 P = [12]
 SCALES = [1]
 
-NGEN = 100
-CXPB = 0.2
-MUTPB = 0.2
-INDPB = 0.2
-POP = 50
-filename = "NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
+globalLinear = 0.13
+globalBalance = 0.32
+globalN1 = 0.07
+globalN2 = 0.48
 
-globalBalance = 0.25
-globalLinear = 0.25
-globalN1 = 0.25
-globalN2 = 0.25
 
-dic = {}
+fig = plt.figure(figsize=(7, 7))
+ax = fig.add_subplot(111, projection="3d")
+
+# the coordinate origin
+ax.scatter(0, 0, 0, c="k", marker="+", s=100)
 
 # reference points
 ref_points = [tools.uniform_reference_points(NOBJ, p, s) for p, s in zip(P, SCALES)]
@@ -46,6 +59,17 @@ ref_points = np.concatenate(ref_points)
 _, uniques = np.unique(ref_points, axis=0, return_index=True)
 ref_points = ref_points[uniques]
 
+ax.scatter(ref_points[:, 0], ref_points[:, 1], ref_points[:, 2], marker="o", s=48)
+
+# final figure details
+ax.set_xlabel("$f_1(\mathbf{x})$", fontsize=15)
+ax.set_ylabel("$f_2(\mathbf{x})$", fontsize=15)
+ax.set_zlabel("$f_3(\mathbf{x})$", fontsize=15)
+ax.view_init(elev=11, azim=-25)
+ax.autoscale(tight=True)
+plt.tight_layout()
+
+#plt.show()
 
 string = """
 #' Measures of linearity
@@ -1172,35 +1196,6 @@ stringr_c = STAP(string, "stringr_c")
 stringr_c._rpy2r.keys()
 
 
-def print_evaluate(individual):
-    dataFrame['label'] = individual
-    robjects.globalenv['dataFrame'] = dataFrame
-    fmla = Formula('label ~ .')
-
-    ## -- linearity
-    linearityVector = stringr_c.linearity_formula(fmla, dataFrame, measures="L2", summary="return")
-    linearity = linearityVector.rx(1)
-    fitness = abs(globalLinear - linearity[0][0])
-
-    ## -- neighborhood N1
-    n1Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N1", summary="return")
-    f1 = n1Vector.rx(1)
-    fitness2 = abs(globalN1 - f1[0][0])
-
-    ## -- neighborhood N2
-    n2Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N2", summary="return")
-    n2 = n2Vector.rx(1)
-    fitness3 = abs(globalN2 - n2[0][0])
-
-    ##imbalance
-    imbalanceVector = stringr_c.balance_formula(fmla, dataFrame, measures="C2", summary="return")
-    imbalance = imbalanceVector.rx(1)
-    fitness4 = abs(globalBalance - imbalance[0][0])
-
-    ## --
-    return (imbalance[0][0]), (linearity[0][0]), (f1[0][0]), (n2[0][0]),
-
-
 def my_evaluate(individual):
     dataFrame['label'] = individual
     robjects.globalenv['dataFrame'] = dataFrame
@@ -1225,11 +1220,10 @@ def my_evaluate(individual):
     imbalanceVector = stringr_c.balance_formula(fmla, dataFrame, measures="C2", summary="return")
     imbalance = imbalanceVector.rx(1)
     fitness4 = abs(globalBalance - imbalance[0][0])
-
     print("imbalance: " + str(imbalance[0][0]) + " linearity: " + str(linearity[0][0]) + " N1: " + str(
         f1[0][0]) + " N2: " + str(n2[0][0]))
     ## --
-    return (fitness4), (fitness), (fitness2), (fitness3),
+    return (fitness * 1000), (fitness2 * 1000), (fitness3 * 1000), (fitness4 * 1000),
 
 
 creator.create("FitnessMin", base.Fitness, weights=(-1.0,)*NOBJ)
@@ -1244,58 +1238,22 @@ toolbox.register("individual", tools.initRepeat, creator.Individual, toolbox.att
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 toolbox.register("evaluate", my_evaluate)
 toolbox.register("mate", tools.cxTwoPoint)
-toolbox.register("mutate", tools.mutShuffleIndexes, indpb=INDPB)
+toolbox.register("mutate", tools.mutShuffleIndexes, indpb=0.01)
 toolbox.register("select", tools.selNSGA3, ref_points=ref_points)
 
-def main(seed=None):
-    random.seed(seed)
-
-    # Initialize statistics object
+def main():
+    random.seed(64)
+    pop = toolbox.population(n=30)
+    hof = tools.HallOfFame(2)
     stats = tools.Statistics(lambda ind: ind.fitness.values)
-    stats.register("avg", np.mean, axis=0)
-    stats.register("std", np.std, axis=0)
-    stats.register("min", np.min, axis=0)
-    stats.register("max", np.max, axis=0)
+    stats.register("avg", np.mean)
+    stats.register("std", np.std)
+    stats.register("min", np.min)
+    stats.register("max", np.max)
 
-    logbook = tools.Logbook()
-    logbook.header = "gen", "evals", "std", "min", "avg", "max"
-
-    pop = toolbox.population(POP)
-
-    # Evaluate the individuals with an invalid fitness
-    invalid_ind = [ind for ind in pop if not ind.fitness.valid]
-    fitnesses = toolbox.map(toolbox.evaluate, invalid_ind)
-    for ind, fit in zip(invalid_ind, fitnesses):
-        ind.fitness.values = fit
-
-    # Compile statistics about the population
-    record = stats.compile(pop)
-
-    logbook.record(gen=0, evals=len(invalid_ind), **record)
-    print(logbook.stream)
-
-    # Begin the generational process
-    for gen in range(1, NGEN):
-        offspring = algorithms.varAnd(pop, toolbox, CXPB, MUTPB)
-
-        # Evaluate the individuals with an invalid fitness
-        invalid_ind = [ind for ind in offspring if not ind.fitness.valid]
-        fitnesses = toolbox.map(toolbox.evaluate, invalid_ind)
-        for ind, fit in zip(invalid_ind, fitnesses):
-            ind.fitness.values = fit
-        # Select the next generation population from parents and offspring
-        pop = toolbox.select(pop + offspring, POP)
-
-        for x in range(len(offspring)):
-            dic[print_evaluate(pop[x])] = pop[x]
-            outfile = open(filename, 'wb')
-            pickle.dump(dic, outfile)
-            outfile.close()
-        # Compile statistics about the new population
-        record = stats.compile(pop)
-        logbook.record(gen=gen, evals=len(invalid_ind), **record)
-        print(logbook.stream)
-    return pop, logbook
+    pop, log = algorithms.eaSimple(pop, toolbox, cxpb=0.9, mutpb=0.01, ngen=5000,
+                                   stats=stats, halloffame=hof, verbose=True)
+    return pop, log, hof
 
 if __name__ == '__main__':
     cont1 = 0
@@ -1303,14 +1261,24 @@ if __name__ == '__main__':
     dataFrame = pd.read_csv(str(N_ATTRIBUTES) + '.csv')
     dataFrame = dataFrame.drop('c0', axis=1)
     results = main()
-    infile = open(filename, 'rb')
-    new_dict = pickle.load(infile)
-    print("NEW DICT")
-    print(new_dict)
-    infile.close()
-    print("logbook")
-    print(results[1])
+    print("O melhor combinação de rótulos:")
+    print(len(results[2][0]))
+    print("Best:", results[2])
+    my_evaluate(results[2][0])
+    for i in range(N_ATTRIBUTES):
+        if results[2][0][i] == 1:
+            cont1 = cont1 + 1
+        elif results[2][0][i] == 0:
+            cont0 = cont0 + 1
+    print("QUANTIDADE DE 0 " + str(cont0) + " QUANTIDADE DE 1 " + str(cont1))
+    print("Population ", len(results[0]))
+    dataFrame['label'] = results[2][0]
     robjects.globalenv['dataFrame'] = dataFrame
+    array1 = np.array(results[2][0])
+    data = pd.DataFrame(results[2][0])
+
+    # Criando o arquivo rotulado
+    # Usar esse arquivo no classificador
     dataFrame.to_csv(
         str(N_ATTRIBUTES) + '_' + str(bobj).replace('.', ',') + '_' + str(globalBalance).replace('.', ',') + '.csv',
         index=False)
@@ -1325,4 +1293,6 @@ if __name__ == '__main__':
     plt.rcParams['figure.figsize'] = (11, 7)
     for key, group in grouped:
         group.plot(ax=ax, kind='scatter', marker=markers[key], x='1', y='2', label=key, color=colors[key])
+
+    plt.savefig('fig2.png')
     plt.show()
