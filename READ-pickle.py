@@ -28,17 +28,18 @@ NOBJ = 4
 P = [12]
 SCALES = [1]
 
-NGEN = 100
-CXPB = 0.5
+NGEN = 5000
+CXPB = 0.7
 MUTPB = 0.2
 INDPB = 0.05
 POP = 50
-filename = "NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
+#filename = "novo 1235- NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
+filename = "048-007-007-0072000GER"
 
-globalBalance = 0.25
-globalLinear = 0.25
-globalN1 = 0.25
-globalN2 = 0.25
+globalBalance = 0.48
+globalLinear = 0.07
+globalN1 = 0.07
+globalN2 = 0.07
 
 
 dic = {"Rotulo": "Valores"}
@@ -1159,9 +1160,284 @@ c.F4 <- function(data) {
   return(aux)
 }
 
+
+
+
+
+
+
+#' Measures of network
+#'
+#' Classification task. The network measures represent the dataset as a graph 
+#' and extract structural information from it. The transformation between raw 
+#' data and the graph representation is based on the epsilon-NN algorithm. Next,
+#' a post-processing step is applied to the graph, pruning edges between 
+#' examples of opposite classes.
+#'
+#' @family complexity-measures
+#' @param x A data.frame contained only the input attributes.
+#' @param y A factor response vector with one label for each row/component of x.
+#' @param measures A list of measures names or \code{"all"} to include all them.
+#' @param formula A formula to define the class column.
+#' @param data A data.frame dataset contained the input attributes and class.
+#' @param eps The percentage of nodes in the graph to be connected.
+#' @param summary A list of summarization functions or empty for all values. See
+#'  \link{summarization} method to more information. (Default: 
+#'  \code{c("mean", "sd")})
+#' @param ... Not used.
+#' @details
+#'  The following measures are allowed for this method:
+#'  \describe{
+#'    \item{"Density"}{Average Density of the network (Density) represents the 
+#'      number of edges in the graph, divided by the maximum number of edges 
+#'      between pairs of data points.}
+#'    \item{"ClsCoef"}{Clustering coefficient (ClsCoef) averages the clustering 
+#'      tendency of the vertexes by the ratio of existent edges between its 
+#'      neighbors and the total number of edges that could possibly exist 
+#'      between them.}
+#'    \item{"Hubs"}{Hubs score (Hubs) is given by the number of connections it  
+#'      has to other nodes, weighted by the number of connections these 
+#'      neighbors have.}
+#'  }
+#' @return A list named by the requested network measure.
+#'
+#' @references
+#'  Gleison Morais and Ronaldo C Prati. (2013). Complex Network Measures for 
+#'    Data Set Characterization. In 2nd Brazilian Conference on Intelligent 
+#'    Systems (BRACIS). 12--18.
+#'
+#'  Luis P F Garcia, Andre C P L F de Carvalho and Ana C Lorena. (2015). Effect
+#'    of label noise in the complexity of classification problems. 
+#'    Neurocomputing 160, 108--119.
+#'
+#' @examples
+#' ## Extract all network measures for classification task
+#' data(iris)
+#' network(Species ~ ., iris)
+#' @export
+network <- function(...) {
+  UseMethod("network")
+}
+
+#' @rdname network
+#' @export
+network.default <- function(x, y, measures="all", eps=0.15, 
+                            summary=c("mean", "sd"), ...) {
+
+  if(!is.data.frame(x)) {
+    stop("data argument must be a data.frame")
+  }
+
+  if(is.data.frame(y)) {
+    y <- y[, 1]
+  }
+
+  y <- as.factor(y)
+
+  if(min(table(y)) < 2) {
+    stop("number of examples in the minority class should be >= 2")
+  }
+
+  if(nrow(x) != length(y)) {
+    stop("x and y must have same number of rows")
+  }
+
+  if(measures[1] == "all") {
+    measures <- ls.network()
+  }
+
+  measures <- match.arg(measures, ls.network(), TRUE)
+
+  if (length(summary) == 0) {
+    summary <- "return"
+  }
+
+  colnames(x) <- make.names(colnames(x), unique=TRUE)
+  dst <- enn(x, y, eps*nrow(x))
+  graph <- igraph::graph.adjacency(dst, mode="undirected", weighted=TRUE)
+
+  sapply(measures, function(f) {
+    measure = eval(call(paste("c", f, sep="."), graph))
+    summarization(measure, summary, f %in% ls.network.multiples(), ...)
+  }, simplify=FALSE)
+}
+
+#' @rdname network
+#' @export
+network.formula <- function(formula, data, measures="all", eps=0.15, 
+                            summary=c("mean", "sd"), ...) {
+
+  if(!inherits(formula, "formula")) {
+    stop("method is only for formula datas")
+  }
+
+  if(!is.data.frame(data)) {
+    stop("data argument must be a data.frame")
+  }
+
+  modFrame <- stats::model.frame(formula, data)
+  attr(modFrame, "terms") <- NULL
+
+  network.default(modFrame[, -1, drop=FALSE], modFrame[, 1, drop=FALSE],
+    measures, eps, summary, ...)
+}
+
+ls.network <- function() {
+  c("Density", "ClsCoef", "Hubs")
+}
+
+ls.network.multiples <- function() {
+  c("Hubs")
+}
+
+enn <- function(x, y, e) {
+
+  dst <- dist(x)
+
+  for(i in 1:nrow(x)) {
+    a <- names(sort(dst[i,])[1:e+1])
+    b <- rownames(x[y == y[i],])
+    dst[i, setdiff(rownames(x), intersect(a, b))] <- 0
+  }
+
+  return(dst)
+}
+
+c.Density <- function(graph) {
+  1 - igraph::graph.density(graph)
+}
+
+c.ClsCoef <- function(graph) {
+  1 - igraph::transitivity(graph, type="global", isolates="zero")
+}
+
+c.Hubs <- function(graph) {
+  #1 - mean(igraph::hub.score(graph)$vector)
+  1 - igraph::hub.score(graph)$vector
+}
+
+
+
+
+#' Measures of dimensionality
+#'
+#' These measures give an indicative of data sparsity. They capture how sparse 
+#' a datasets tend to have regions of low density. These regions are know to be 
+#' more difficult to extract good classification and regression models.
+#'
+#' @family complexity-measures
+#' @param x A data.frame contained only the input attributes.
+#' @param y A response vector with one value for each row/component of x.
+#' @param measures A list of measures names or \code{"all"} to include all them.
+#' @param formula A formula to define the output column.
+#' @param data A data.frame dataset contained the input and output attributes.
+#' @param ... Not used.
+#' @details
+#'  The following measures are allowed for this method:
+#'  \describe{
+#'    \item{"T2"}{Average number of points per dimension (T2) is given by the 
+#'      ratio between the number of examples and dimensionality of the dataset.}
+#'    \item{"T3"}{Average number of points per PCA (T3) is similar to T2, but 
+#'      uses the number of PCA components needed to represent 95% of data 
+#'      variability as the base of data sparsity assessment.}
+#'    \item{"T4"}{Ratio of the PCA Dimension to the Original (T4) estimates the
+#'      proportion of relevant and the original dimensions for a dataset.}
+#'  }
+#' @return A list named by the requested dimensionality measure.
+#'
+#' @references
+#'  Ana C Lorena, Ivan G Costa, Newton Spolaor and Marcilio C P Souto. (2012). 
+#'    Analysis of complexity indices for classification problems: Cancer gene 
+#'    expression data. Neurocomputing 75, 1, 33--42.
+#'
+#' @examples
+#' ## Extract all dimensionality measures for classification task
+#' data(iris)
+#' dimensionality(Species ~ ., iris)
+#'
+#' ## Extract all dimensionality measures for regression task
+#' data(cars)
+#' dimensionality(speed ~ ., cars)
+#' @export
+dimensionality <- function(...) {
+  UseMethod("dimensionality")
+}
+
+#' @rdname dimensionality
+#' @export
+dimensionality.default <- function(x, y, measures="all", ...) {
+
+  if(!is.data.frame(x)) {
+    stop("data argument must be a data.frame")
+  }
+
+  if(is.data.frame(y)) {
+    y <- y[, 1]
+  }
+
+  if(nrow(x) != length(y)) {
+    stop("x and y must have same number of rows")
+  }
+
+  if(measures[1] == "all") {
+    measures <- ls.dimensionality()
+  }
+
+  measures <- match.arg(measures, ls.dimensionality(), TRUE)
+  colnames(x) <- make.names(colnames(x), unique=TRUE)
+
+  x <- binarize(x)
+
+  sapply(measures, function(f) {
+    eval(call(paste("c", f, sep="."), x=x))
+  })
+}
+
+#' @rdname dimensionality
+#' @export
+dimensionality.formula <- function(formula, data, measures="all", ...) {
+
+  if(!inherits(formula, "formula")) {
+    stop("method is only for formula datas")
+  }
+
+  if(!is.data.frame(data)) {
+    stop("data argument must be a data.frame")
+  }
+
+  modFrame <- stats::model.frame(formula, data)
+  attr(modFrame, "terms") <- NULL
+
+  dimensionality.default(modFrame[, -1, drop=FALSE], modFrame[, 1, drop=FALSE],
+    measures, ...)
+}
+
+ls.dimensionality <- function() {
+  c("T2", "T3", "T4")
+}
+
+pca <- function(x) {
+  aux <- stats::prcomp(x)
+  tmp <- length(which(summary(aux)$importance[3,] < 0.95)) + 1
+  return(tmp)
+}
+
+c.T2 <- function(x) {
+  ncol(x)/nrow(x)
+}
+
+c.T3 <- function(x) {
+  pca(x)/nrow(x)
+}
+
+c.T4 <- function(x) {
+  pca(x)/ncol(x)
+}
+
+
 """
 stringr_c = STAP(string, "stringr_c")
-stringr_c._rpy2r.keys()
+print(stringr_c._rpy2r.keys())
 def my_evaluate(individual):
     dataFrame['label'] = individual
     robjects.globalenv['dataFrame'] = dataFrame
@@ -1204,7 +1480,6 @@ if __name__ == '__main__':
     new_dict = pickle.load(infile)
     print("NEW DICT")
     for i in new_dict:
-
         print(i)
         total = globalBalance+globalLinear+globalN1+globalN2
         res = (i[0] + i[1] + i[2] + i[3])

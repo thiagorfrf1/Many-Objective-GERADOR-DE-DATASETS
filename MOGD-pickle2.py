@@ -26,17 +26,18 @@ NOBJ = 4
 P = [12]
 SCALES = [1]
 
-NGEN = 100
-CXPB = 0.2
+NGEN = 3000
+CXPB = 0.7
 MUTPB = 0.2
-INDPB = 0.2
+INDPB = 0.05
 POP = 50
-filename = "NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
+#filename = "NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
+filename = "007-007-007-007-3000GER"
 
-globalBalance = 0.25
-globalLinear = 0.25
-globalN1 = 0.25
-globalN2 = 0.25
+globalBalance = 0.07
+globalLinear = 0.07
+globalN1 = 0.07
+globalN2 = 0.07
 
 dic = {}
 
@@ -1226,8 +1227,8 @@ def my_evaluate(individual):
     imbalance = imbalanceVector.rx(1)
     fitness4 = abs(globalBalance - imbalance[0][0])
 
-    print("imbalance: " + str(imbalance[0][0]) + " linearity: " + str(linearity[0][0]) + " N1: " + str(
-        f1[0][0]) + " N2: " + str(n2[0][0]))
+    #print("imbalance: " + str(imbalance[0][0]) + " linearity: " + str(linearity[0][0]) + " N1: " + str(
+    #    f1[0][0]) + " N2: " + str(n2[0][0]))
     ## --
     return (fitness4), (fitness), (fitness2), (fitness3),
 
