@@ -33,13 +33,13 @@ CXPB = 0.7
 MUTPB = 0.2
 INDPB = 0.05
 POP = 50
-#filename = "novo 1235- NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
-filename = "048-007-007-0072000GER"
 
-globalBalance = 0.48
-globalLinear = 0.07
-globalN1 = 0.07
-globalN2 = 0.07
+filename = "ferramenta"
+
+globalBalance = 0.25
+globalLinear = 0.25
+globalN1 = 0.25
+globalN2 = 0.25
 
 
 dic = {"Rotulo": "Valores"}

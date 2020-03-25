@@ -32,12 +32,13 @@ MUTPB = 0.2
 INDPB = 0.05
 POP = 50
 #filename = "NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
-filename = "007-007-007-007-3000GER"
 
-globalBalance = 0.07
-globalLinear = 0.07
-globalN1 = 0.07
-globalN2 = 0.07
+filename = "025-025-025-010-3000GER-4CLASS"
+
+globalBalance = 0.25
+globalLinear = 0.25
+globalN1 = 0.25
+globalN2 = 0.25
 
 dic = {}
 
@@ -1227,9 +1228,6 @@ def my_evaluate(individual):
     imbalance = imbalanceVector.rx(1)
     fitness4 = abs(globalBalance - imbalance[0][0])
 
-    #print("imbalance: " + str(imbalance[0][0]) + " linearity: " + str(linearity[0][0]) + " N1: " + str(
-    #    f1[0][0]) + " N2: " + str(n2[0][0]))
-    ## --
     return (fitness4), (fitness), (fitness2), (fitness3),
 
 
@@ -1237,7 +1235,7 @@ creator.create("FitnessMin", base.Fitness, weights=(-1.0,)*NOBJ)
 creator.create("Individual", list, fitness=creator.FitnessMin)
 
 RANDINT_LOW = 0
-RANDINT_UP = 1
+RANDINT_UP = 3
 
 toolbox = base.Toolbox()
 toolbox.register("attr_int", random.randint, RANDINT_LOW, RANDINT_UP)

@@ -29,7 +29,7 @@ P = [12]
 SCALES = [1]
 FINAL = 1000000000
 
-NGEN = 5000
+NGEN = 50
 CXPB = 0.7
 MUTPB = 0.2
 INDPB = 0.05
@@ -55,6 +55,7 @@ globalN2 = 0.25
 globalClsCoef = 0.25
 globalt2 = 0.25
 globalf1 = 0.25
+
 
 dic = {}
 
@@ -1779,7 +1780,12 @@ def my_evaluate(individual):
         f1 = f1Vector.rx(1)
         vetor.append(abs(globalf1 - f1[0][0]))
     ## --
-    return vetor[0], vetor[1], vetor[2], vetor[3],
+    if(len(vetor) == 2):
+        return vetor[0], vetor[1],
+    elif(len(vetor) == 3):
+        return vetor[0], vetor[1], vetor[2],
+    elif(len(vetor) == 4):
+        return vetor[0], vetor[1], vetor[2], vetor[3],
 
 
 def print_evaluate(individual):
@@ -1903,8 +1909,6 @@ def main(seed=None):
 
 if __name__ == '__main__':
 
-    print("Final")
-    print(FINAL)
     print(best)
     print(best1)
     cont1 = 0
