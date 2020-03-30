@@ -27,10 +27,10 @@ bobj = 0.4
 P = [12]
 SCALES = [1]
 ok = "0"
-NGEN = 15000
+NGEN = 2000
 CXPB = 0.7
 MUTPB = 0.2
-INDPB = 0.05
+INDPB = 0.2
 POP = 50
 while ok == "0":
     print("Escolha que tipo de base deseja gerar:")
@@ -40,15 +40,17 @@ while ok == "0":
 
     dataset = input("Opção 1 - 2  - 3: ")
 
-    n_instancias = input("Quantas instancias (Exmplos) deseja utilizar? ")
+    n_instancias = input("Quantas instancias (Exemplos) deseja utilizar? ")
     n_features = input("Quantos atributos (features) deseja utilizar? ")
 
     if(dataset == "1"):
         centers = input("Quantas bolhas (centers) deseja utilizar?")
         print(type(centers))
-
         X, y = make_blobs(n_samples=int(n_instancias), centers=int(centers), n_features=int(n_features))
-        df = DataFrame(dict(x=X[:, 0], y=X[:, 1], z=X[:, 2], label=y))
+        if n_features == "2":
+            df = DataFrame(dict(x=X[:, 0], y=X[:, 1], label=y))
+        else:
+            df = DataFrame(dict(x=X[:, 0], y=X[:, 1], z=X[:, 2], label=y))
         colors = {0: 'red', 1: 'blue', 2: 'orange'}  # , 2:'green', 3:'orange', 4:'pink'}
         fig, ax = pyplot.subplots()
         grouped = df.groupby('label')
