@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4acc0be8-fe18-49b7-a25d-81a6c1f80a23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Ferramenta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MOGD-Ferramenta-SEM-PICKLE-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MOGD-Ferramenta-SEMINTERACAO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MOGD-Ferramenta-SEM-PICKLE.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-Ferramenta-SEM-PICKLE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MOGD-Ferramenta.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-Ferramenta.py" afterDir="false" />
-    </list>
+    <list default="true" id="4acc0be8-fe18-49b7-a25d-81a6c1f80a23" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -339,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585161746394</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Inicial">
+      <created>1585547628604</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1585547628604</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -391,35 +391,35 @@
     </state>
     <state x="594" y="220" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582856399238" />
     <state x="743" y="278" width="424" height="479" key="FileChooserDialogImpl/0.0.1920.1043@0.0.1920.1043" timestamp="1579839999064" />
-    <state width="1169" height="210" key="GridCell.Tab.0.bottom" timestamp="1585410817306">
+    <state width="1169" height="210" key="GridCell.Tab.0.bottom" timestamp="1585548284508">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="262" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1584468022371" />
-    <state width="1169" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585410817306" />
+    <state width="1169" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585548284508" />
     <state width="1899" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578749689324" />
     <state width="1899" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1580353013134" />
     <state width="1899" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1047@0.0.1920.1047" timestamp="1579245001908" />
-    <state width="1169" height="210" key="GridCell.Tab.0.center" timestamp="1585410817306">
+    <state width="1169" height="210" key="GridCell.Tab.0.center" timestamp="1585548284507">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="262" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1584468022371" />
-    <state width="1169" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585410817306" />
+    <state width="1169" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585548284507" />
     <state width="1899" height="263" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578749689321" />
     <state width="1899" height="265" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1580353013131" />
     <state width="1899" height="265" key="GridCell.Tab.0.center/0.0.1920.1047@0.0.1920.1047" timestamp="1579245001907" />
-    <state width="1169" height="210" key="GridCell.Tab.0.left" timestamp="1585410817306">
+    <state width="1169" height="210" key="GridCell.Tab.0.left" timestamp="1585548284507">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="262" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1584468022371" />
-    <state width="1169" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585410817306" />
+    <state width="1169" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585548284506" />
     <state width="1899" height="263" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578749689320" />
     <state width="1899" height="265" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1580353013126" />
     <state width="1899" height="265" key="GridCell.Tab.0.left/0.0.1920.1047@0.0.1920.1047" timestamp="1579245001907" />
-    <state width="1169" height="210" key="GridCell.Tab.0.right" timestamp="1585410817306">
+    <state width="1169" height="210" key="GridCell.Tab.0.right" timestamp="1585548284507">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="262" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1584468022371" />
-    <state width="1169" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585410817306" />
+    <state width="1169" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585548284507" />
     <state width="1899" height="263" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578749689323" />
     <state width="1899" height="265" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1580353013134" />
     <state width="1899" height="265" key="GridCell.Tab.0.right/0.0.1920.1047@0.0.1920.1047" timestamp="1579245001908" />
