@@ -32,7 +32,18 @@ MUTPB = 0.2
 INDPB = 0.05
 POP = 50
 
-filename = "Ferramenta"
+#globalBalance = 0.00
+#globalLinear = 0.00
+#globalBalance = 0.16
+#globalLinear = 0.16
+globalBalance = 0.0
+globalLinear = 0.0
+globalN2 = 0.07
+globalClsCoef = 0.07
+globalt2 = 0.07
+globalf1 = 0.07
+
+filename = "3classes-1-2-500-500GER-n_features=2"
 print("Class imbalance C2 = 1")
 print("Linearity L2 = 2")
 print("Neighborhood N2 = 3")
@@ -49,12 +60,7 @@ NOBJ = len(metricasList)
 objetivos = input("Escolha os valores que deseja alcançar para cada métrica")
 objetivosList = objetivos.split()
 
-globalBalance = 0.07
-globalLinear = 0.07
-globalN2 = 0.25
-globalClsCoef = 0.25
-globalt2 = 0.25
-globalf1 = 0.25
+
 
 
 dic = {"Rotulo": "Valores"}
@@ -1510,8 +1516,7 @@ RANDINT_UP = 1
 if __name__ == '__main__':
     cont1 = 0
     cont0 = 0
-    dataFrame = pd.read_csv(str(N_ATTRIBUTES) + '.csv')
-    dataFrame = dataFrame.drop('c0', axis=1)
+    dataFrame = pd.read_csv(str(filename) + '.csv')
     infile = open(filename, 'rb')
     new_dict = pickle.load(infile)
     print("NEW DICT")

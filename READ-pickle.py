@@ -20,7 +20,7 @@ FINAL = 1000000000
 best = 0
 best1 = 0
 
-N_ATTRIBUTES = 101
+N_ATTRIBUTES = 500
 cont = 0
 bobj = 0.4
 
@@ -28,18 +28,14 @@ NOBJ = 4
 P = [12]
 SCALES = [1]
 
-NGEN = 5000
-CXPB = 0.7
-MUTPB = 0.2
-INDPB = 0.05
-POP = 50
 
-filename = "ferramenta"
 
-globalBalance = 0.25
-globalLinear = 0.25
-globalN1 = 0.25
-globalN2 = 0.25
+filename = "Ferramenta"
+
+globalBalance = 0.00
+globalLinear = 0.00
+globalN1 = 0.07
+globalN2 = 0.07
 
 
 dic = {"Rotulo": "Valores"}
@@ -1468,8 +1464,6 @@ creator.create("FitnessMin", base.Fitness, weights=(-1.0,)*NOBJ)
 creator.create("Individual", list, fitness=creator.FitnessMin)
 RANDINT_LOW = 0
 RANDINT_UP = 1
-
-
 
 if __name__ == '__main__':
     cont1 = 0

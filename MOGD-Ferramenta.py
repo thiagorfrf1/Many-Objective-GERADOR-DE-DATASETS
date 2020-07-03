@@ -5,13 +5,12 @@ import pandas as pd
 import random
 import matplotlib.pyplot as plt
 import pickle
-import multiprocessing
+
 
 from deap import base
 from deap import creator
 from deap import tools
 from deap import algorithms
-from scoop import futures
 
 import rpy2.robjects as robjects
 
@@ -23,19 +22,18 @@ pandas2ri.activate()
 N_ATTRIBUTES = 101
 cont = 0
 bobj = 0.4
-best = ""
-best1 = ""
+
 NOBJ = 4
 P = [12]
 SCALES = [1]
-FINAL = 1000000000
 
-NGEN = 50
+
+NGEN = 3500
 CXPB = 0.7
 MUTPB = 0.2
 INDPB = 0.05
 POP = 50
-filename = "novo 1235- NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
+filename = "novo 1236 - NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
 print("Class imbalance C2 = 1")
 print("Linearity L2 = 2")
 print("Neighborhood N2 = 3")
@@ -46,7 +44,7 @@ print("Feature-based F1 = 6")
 metricas = input("Escolha quais métricas deseja otimizar (separe com espaço)")
 
 metricasList = metricas.split()
-
+20884
 objetivos = input("Escolha os valores que deseja alcançar para cada métrica")
 objetivosList = objetivos.split()
 
@@ -56,7 +54,6 @@ globalN2 = 0.25
 globalClsCoef = 0.25
 globalt2 = 0.25
 globalf1 = 0.25
-
 
 dic = {}
 
@@ -1781,12 +1778,7 @@ def my_evaluate(individual):
         f1 = f1Vector.rx(1)
         vetor.append(abs(globalf1 - f1[0][0]))
     ## --
-    if(len(vetor) == 2):
-        return vetor[0], vetor[1],
-    elif(len(vetor) == 3):
-        return vetor[0], vetor[1], vetor[2],
-    elif(len(vetor) == 4):
-        return vetor[0], vetor[1], vetor[2], vetor[3],
+    return vetor[0], vetor[1], vetor[2], vetor[3],
 
 
 def print_evaluate(individual):
@@ -1842,10 +1834,10 @@ toolbox.register("evaluate", my_evaluate)
 toolbox.register("mate", tools.cxTwoPoint)
 toolbox.register("mutate", tools.mutShuffleIndexes, indpb=INDPB)
 toolbox.register("select", tools.selNSGA3, ref_points=ref_points)
-toolbox.register("map", futures.map)
 
 def main(seed=None):
-    random.seed(64)
+    random.seed(seed)
+
     # Initialize statistics object
     stats = tools.Statistics(lambda ind: ind.fitness.values)
     stats.register("avg", np.mean, axis=0)
@@ -1868,11 +1860,9 @@ def main(seed=None):
 
     logbook.record(gen=0, evals=len(invalid_ind), **record)
     print(logbook.stream)
+
     # Begin the generational process
     for gen in range(1, NGEN):
-        global FINAL
-        global best
-        global best1
         offspring = algorithms.varAnd(pop, toolbox, CXPB, MUTPB)
         # Evaluate the individuals with an invalid fitness
         invalid_ind = [ind for ind in offspring if not ind.fitness.valid]
@@ -1882,24 +1872,8 @@ def main(seed=None):
         # Select the next generation population from parents and offspring
         pop = toolbox.select(pop + offspring, POP)
 
-        for i in offspring:
-            total = 25 + 25 + 25 + 25
-            res = (i[0] + i[1] + i[2] + i[3])
-            if res != "Rotu":
-                value1 = abs(25 - i[0]) * 1000
-                value2 = abs(25 - i[1]) * 1000
-                value3 = abs(25 - i[2]) * 1000
-                value4 = abs(25 - i[3]) * 1000
-                values = value1 + value2 + value3 + value4
-            if res != "Rotu":
-                final = abs((values - total))
-            if (final < FINAL):
-                FINAL = final
-                best1 = i
-                best = print_evaluate(i)
-
         for x in range(len(offspring)):
-            dic[print_evaluate(pop[x])] = pop[x]
+            dic[print_evaluate(offspring[x])] = offspring[x]
             outfile = open(filename, 'wb')
             pickle.dump(dic, outfile)
             outfile.close()
@@ -1910,9 +1884,6 @@ def main(seed=None):
     return pop, logbook
 
 if __name__ == '__main__':
-
-    print(best)
-    print(best1)
     cont1 = 0
     cont0 = 0
     dataFrame = pd.read_csv(str(N_ATTRIBUTES) + '.csv')
@@ -1930,6 +1901,7 @@ if __name__ == '__main__':
         str(N_ATTRIBUTES) + '_' + str(bobj).replace('.', ',') + '_' + str(globalBalance).replace('.', ',') + '.csv',
         index=False)
     dataFrame.head(N_ATTRIBUTES)
+
     df = pd.read_csv(
         str(N_ATTRIBUTES) + '_' + str(bobj).replace('.', ',') + '_' + str(globalBalance).replace('.', ',') + ".csv")
     colors = {0: 'red', 1: 'blue'}
@@ -1940,7 +1912,3 @@ if __name__ == '__main__':
     for key, group in grouped:
         group.plot(ax=ax, kind='scatter', marker=markers[key], x='1', y='2', label=key, color=colors[key])
     plt.show()
-    print("Final")
-    print(FINAL)
-    print(best)
-    print(best1)
