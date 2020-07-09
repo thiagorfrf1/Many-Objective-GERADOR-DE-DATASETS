@@ -24,7 +24,7 @@ pandas2ri.activate()
 
 globalBalance = 0.07
 globalLinear = 0.07
-globalN1 = 0.07
+globalN2 = 0.07
 globalClsCoef = 0.07
 globalt2 = 0.07
 globalf1 = 0.07
@@ -33,18 +33,20 @@ cont = 0
 P = [12]
 SCALES = [1]
 ok = "0"
-NGEN = 10000
+NGEN = 1000
 CXPB = 0.7
 MUTPB = 0.2
 INDPB = 0.05
 POP = 100
 dataset = "1"
-n_instancias = 500
-n_features = "10"
-filename = "FACIL"
+n_instancias = 100
+n_features = "2"
+filename = "1OBJC2"
 centers = 1
-metricas = "1 2 3"
-noise = 0.1
+metricas = "2"
+noise = 0.5
+
+
 
 while ok == "0":
     #print("Escolha que tipo de base deseja gerar:")
@@ -84,7 +86,7 @@ while ok == "0":
 
     if (dataset == "2"):
         #noise = input("Quanto de ruido deseja utilizar? entre 0 e 1")
-        X, y = make_moons(n_samples=int(n_instancias), noise=float(noise), n_features=int(n_features))
+        X, y = make_moons(n_samples=int(n_instancias), noise=float(noise))
         # scatter plot, dots colored by class value
         df = DataFrame(dict(x=X[:, 0], y=X[:, 1], label=y))
         colors = {0: 'red', 1: 'blue'}
@@ -1838,9 +1840,9 @@ def my_evaluate(individual):
         vetor.append(abs(globalLinear - linearity[0][0]))
     if ("3" in metricasList):
         ## -- neighborhood N2
-        n2Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N1", summary="return")
+        n2Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N2", summary="return")
         n2 = n2Vector.rx(1)
-        vetor.append(abs(globalN1 - n2[0][0]))
+        vetor.append(abs(globalN2 - n2[0][0]))
     if ("4" in metricasList):
         ## -- Network ClsCoef
         ClsCoefVector = stringr_c.network_formula(fmla, dataFrame, measures="ClsCoef", summary="return")
@@ -1884,7 +1886,7 @@ def print_evaluate(individual):
         vetor.append(linearity[0][0])
     if ("3" in metricasList):
         ## -- neighborhood N2
-        n2Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N1", summary="return")
+        n2Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N2", summary="return")
         n2 = n2Vector.rx(1)
         vetor.append(n2[0][0])
     if ("4" in metricasList):
@@ -1903,22 +1905,16 @@ def print_evaluate(individual):
         f1 = f1Vector.rx(1)
         vetor.append(f1[0][0])
     ## --
-    if(len(vetor) == 1):
-        return vetor[0],
-    if(len(vetor) == 2):
-        return vetor[0], vetor[1],
-    elif(len(vetor) == 3):
-        return vetor[0], vetor[1], vetor[2],
-    elif(len(vetor) == 4):
-        return vetor[0], vetor[1], vetor[2], vetor[3],
+    return vetor[0],
 
 
-
-creator.create("FitnessMin", base.Fitness, weights=(-1.0,)*NOBJ)
-creator.create("Individual", list, fitness=creator.FitnessMin)
 
 RANDINT_LOW = 0
 RANDINT_UP = 1
+
+
+creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
+creator.create("Individual", list, fitness=creator.FitnessMin)
 
 toolbox = base.Toolbox()
 toolbox.register("attr_int", random.randint, RANDINT_LOW, RANDINT_UP)
@@ -1926,8 +1922,10 @@ toolbox.register("individual", tools.initRepeat, creator.Individual, toolbox.att
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 toolbox.register("evaluate", my_evaluate)
 toolbox.register("mate", tools.cxTwoPoint)
+#toolbox.register("mutate", tools.mutUniformInt, low=RANDINT_LOW, up=RANDINT_UP, indpb=INDPB)
 toolbox.register("mutate", tools.mutShuffleIndexes, indpb=INDPB)
-toolbox.register("select", tools.selNSGA3, ref_points=ref_points)
+toolbox.register("select", tools.selTournament, tournsize=3)
+
 
 def main(seed=None):
     random.seed(64)
@@ -1984,12 +1982,13 @@ if __name__ == '__main__':
         outfile = open(filename, 'wb')
         pickle.dump(dic, outfile)
         outfile.close()
+
     df['label'] = results[0][0]
     df.to_csv(str(filename)+".csv")
     fig, ax = pyplot.subplots()
     grouped = df.groupby('label')
-    #for key, group in grouped:
-     #   group.plot(ax=ax, kind='scatter', x='x', y='y', label=key, color=colors[key])
-    #print(X)
-    #print(y)
-    #pyplot.show()
+    for key, group in grouped:
+        group.plot(ax=ax, kind='scatter', x='x', y='y', label=key, color=colors[key])
+    print(X)
+    print(y)
+    pyplot.show()

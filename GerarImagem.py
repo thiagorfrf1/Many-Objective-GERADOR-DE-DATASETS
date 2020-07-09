@@ -33,16 +33,18 @@ from rpy2.robjects.packages import importr
 from rpy2.robjects import IntVector, Formula
 pandas2ri.activate()
 
-dataFrame = pd.read_csv("3classes-1-2-500-500GER-n_features=2.csv", index_col=False)
+filename = "CEN2-MUITODIFICIL-1-2-3-100-5000GER-n_features=2"
+
+dataFrame = pd.read_csv(str(filename)+".csv", index_col=False)
 
 
 #teste = [1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 2, 0, 0, 2, 2, 1, 1, 2, 1, 0, 0, 2, 2, 2, 2, 0, 2, 1, 2, 2, 2, 2, 2, 1, 2, 1, 2, 2, 1, 1, 2, 2, 2, 1, 0, 0, 1, 2, 2, 1, 2, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 2, 2, 1, 2, 2, 0, 2, 2, 0, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 2, 1, 2, 2, 2, 0]
 
     #my_evaluate(teste[0])
     #dataFrame['label'] = teste
-   # robjects.globalenv['dataFrame'] = dataFrame
+    #robjects.globalenv['dataFrame'] = dataFrame
     #array1 = np.array(teste)
-   # data = pd.DataFrame(teste)
+    #data = pd.DataFrame(teste)
 
     # Criando o arquivo rotulado
     # Usar esse arquivo no classificador
@@ -58,5 +60,5 @@ grouped = df.groupby('label')
 plt.rcParams['figure.figsize'] = (11, 7)
 for key, group in grouped:
     group.plot(ax=ax, kind='scatter', x='x', y='y', label=key, color=colors[key])
-plt.savefig('007.png')
+plt.savefig(str(filename)+'.png')
 plt.show()

@@ -26,24 +26,20 @@ P = [12]
 SCALES = [1]
 FINAL = 1000000000
 
-NGEN = 300
+NGEN = 1000
 CXPB = 0.7
 MUTPB = 0.2
 INDPB = 0.05
 POP = 50
 
-#globalBalance = 0.00
-#globalLinear = 0.00
-#globalBalance = 0.16
-#globalLinear = 0.16
-globalBalance = 0.0
-globalLinear = 0.0
-globalN2 = 0.07
+globalBalance = 0.07
+globalLinear = 0.07
+globalN1 = 0.07
 globalClsCoef = 0.07
 globalt2 = 0.07
 globalf1 = 0.07
 
-filename = "3classes-1-2-500-500GER-n_features=2"
+filename = "CEN2-FACIL-1-2-3-100-10000GER-n_features=2"
 print("Class imbalance C2 = 1")
 print("Linearity L2 = 2")
 print("Neighborhood N2 = 3")
@@ -1478,9 +1474,9 @@ def my_evaluate(individual):
         vetor.append(abs(globalLinear - linearity[0][0]))
     if ("3" in metricasList):
         ## -- neighborhood N2
-        n2Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N2", summary="return")
+        n2Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N1", summary="return")
         n2 = n2Vector.rx(1)
-        vetor.append(abs(globalN2 - n2[0][0]))
+        vetor.append(abs(globalN1 - n2[0][0]))
     if ("4" in metricasList):
         ## -- Network ClsCoef
         ClsCoefVector = stringr_c.network_formula(fmla, dataFrame, measures="ClsCoef", summary="return")

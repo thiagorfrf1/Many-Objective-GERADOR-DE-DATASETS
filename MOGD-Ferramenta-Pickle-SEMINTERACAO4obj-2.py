@@ -25,7 +25,7 @@ pandas2ri.activate()
 globalBalance = 0.07
 globalLinear = 0.07
 globalN1 = 0.07
-globalClsCoef = 0.07
+globalN2 = 0.07
 globalt2 = 0.07
 globalf1 = 0.07
 
@@ -38,13 +38,13 @@ CXPB = 0.7
 MUTPB = 0.2
 INDPB = 0.05
 POP = 100
-dataset = "1"
-n_instancias = 500
-n_features = "10"
-filename = "FACIL"
+dataset = "3"
+n_instancias = 100
+n_features = "2"
+filename = "4OBJE-FACIL"+str(n_instancias)+"-"+str(NGEN)+"GER"
 centers = 1
-metricas = "1 2 3"
-noise = 0.1
+metricas = "1 2 3 4"
+noise = 0.05
 
 while ok == "0":
     #print("Escolha que tipo de base deseja gerar:")
@@ -1837,15 +1837,15 @@ def my_evaluate(individual):
         linearity = linearityVector.rx(1)
         vetor.append(abs(globalLinear - linearity[0][0]))
     if ("3" in metricasList):
-        ## -- neighborhood N2
-        n2Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N1", summary="return")
-        n2 = n2Vector.rx(1)
-        vetor.append(abs(globalN1 - n2[0][0]))
+        ## -- neighborhood N1
+        n1Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N1", summary="return")
+        n1 = n1Vector.rx(1)
+        vetor.append(abs(globalN1 - n1[0][0]))
     if ("4" in metricasList):
-        ## -- Network ClsCoef
-        ClsCoefVector = stringr_c.network_formula(fmla, dataFrame, measures="ClsCoef", summary="return")
-        ClsCoef = ClsCoefVector.rx(1)
-        vetor.append(abs(globalClsCoef - ClsCoef[0][0]))
+        ## -- neighborhood N2
+        n2Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N2", summary="return")
+        n2 = n2Vector.rx(1)
+        vetor.append(abs(globalN2 - n2[0][0]))
     if ("5" in metricasList):
         ## -- Dimensionality T2
         t2Vector = stringr_c.dimensionality_formula(fmla, dataFrame, measures="T2", summary="return")
@@ -1984,12 +1984,13 @@ if __name__ == '__main__':
         outfile = open(filename, 'wb')
         pickle.dump(dic, outfile)
         outfile.close()
+
     df['label'] = results[0][0]
     df.to_csv(str(filename)+".csv")
     fig, ax = pyplot.subplots()
     grouped = df.groupby('label')
-    #for key, group in grouped:
-     #   group.plot(ax=ax, kind='scatter', x='x', y='y', label=key, color=colors[key])
-    #print(X)
-    #print(y)
-    #pyplot.show()
+    for key, group in grouped:
+        group.plot(ax=ax, kind='scatter', x='x', y='y', label=key, color=colors[key])
+    print(X)
+    print(y)
+    pyplot.show()
