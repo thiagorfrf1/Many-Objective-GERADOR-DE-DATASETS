@@ -2,133 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4acc0be8-fe18-49b7-a25d-81a6c1f80a23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/007-1-2-100-10000GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007-1-2-100-10000GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007-1-2-100-1500GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007-1-2-100-1500GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007-1-2-100-3000GER-n_features=10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007-1-2-100-3000GER-n_features=10.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007-1-2-100-3000GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007-1-2-100-3000GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007-1-2-100-5000GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007-1-2-100-5000GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007-1-2-100-500GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007-1-2-100-500GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007048-1-2-100-1000GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007048-1-2-100-1000GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007048-1-2-100-3000GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/007048-1-2-100-3000GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/022022-1-2-100-100GER-n_features=10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/022022-1-2-100-100GER-n_features=10.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/022022-1-2-100-100GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/022022-1-2-100-100GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/022022-1-2-100-200GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/022022-1-2-100-200GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/035035-1-2-100-1500GER-n_features=10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/035035-1-2-100-1500GER-n_features=10.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/035035-1-2-100-500GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/035035-1-2-100-500GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-2-100-1500GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-2-100-1500GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-2-100-200GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-2-100-200GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-2-100-3000GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-2-100-3000GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-2-100-400GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-2-100-400GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-2-100-500GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-2-100-500GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1OBJC2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1OBJC2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2OBJETIVOS/.ipynb_checkpoints/Classificador-CROS-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2OBJETIVOS/.ipynb_checkpoints/Classificador-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2OBJETIVOS/CEN2-FACIL-1-2-3-100-700GER-n_features=2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2OBJETIVOS/Classificador-CROS.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2OBJETIVOS/Classificador.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2OBJETIVOS/DIFICIL.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2OBJETIVOS/FACIL.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2OBJETIVOS/MEDIO.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2OBJETIVOS/MUITODIFICIL.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/.ipynb_checkpoints/Classificador-CROS-MEDIAF1-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/.ipynb_checkpoints/Classificador-CROS-Precision-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/.ipynb_checkpoints/Classificador-CROS-Recal-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/.ipynb_checkpoints/Classificador-CROS-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/CEN2-DIFICIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/CEN2-FACIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/CEN2-MEDIO.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/CEN2-MUITODIFICIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/Classificador-CROS-MEDIAF1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/Classificador-CROS-Precision.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/Classificador-CROS-Recal.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/Classificador-CROS.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/Classificador.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/DIFICIL.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/FACIL.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/MEDIO.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3OBJETIVOS/MUITODIFICIL.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4OBJE-DIFICIL100-1000GER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4OBJE-DIFICIL100-1000GER.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4OBJE-DIFICIL100-3000GER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4OBJE-DIFICIL100-3000GER.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4OBJE-FACIL100-10000GER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4OBJE-FACIL100-10000GER.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4OBJE-FACIL100-5000GER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4OBJE-FACIL100-5000GER.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-DIFICIL-1-2-3-100-150GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-DIFICIL-1-2-3-100-150GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-DIFICIL-1-2-3-100-150GER-n_features=2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-DIFICIL-1-2-3-100-300GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-DIFICIL-1-2-3-100-300GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-FACIL-1-2-3-100-500GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-FACIL-1-2-3-100-500GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-FACIL-1-2-3-100-500GER-n_features=2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-FACIL-1-2-3-100-700GER-n_features=10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-FACIL-1-2-3-100-700GER-n_features=10.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-FACIL-1-2-3-100-700GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-FACIL-1-2-3-100-700GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-FACIL-1-2-3-100-700GER-n_features=2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-1000GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-1000GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-100GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-100GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-150GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-150GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-200GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-200GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-300GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-300GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-500GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-500GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-500GER-n_features=2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-700GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MEDIO-1-2-3-100-700GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MUITODIFICIL-1-2-3-100-1000GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MUITODIFICIL-1-2-3-100-1000GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MUITODIFICIL-1-2-3-100-2000GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MUITODIFICIL-1-2-3-100-2000GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MUITODIFICIL-1-2-3-100-5000GER-n_features=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MUITODIFICIL-1-2-3-100-5000GER-n_features=2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CEN2-MUITODIFICIL-1-2-3-100-5000GER-n_features=2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FACIL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FACIL.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ferramenta-Um-Objetivo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MOGD-Ferramenta-Pickle-SEMINTERACAO4obj-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MOGD-Ferramenta-Pickle-SEMINTERACAO4obj.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/READ-pickle-1OBJ.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/READ-pickle-3OBJ.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/READ-pickle-4OBJ.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cen1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cen2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cen3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cen4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/umobjetivoC2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/umobjetivoC2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3OBJETIVOS3INSTANCIAS/Classificador-CROS-MEDIAF1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3OBJETIVOS3INSTANCIAS/Classificador-CROS-Precision.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3OBJETIVOS3INSTANCIAS/Classificador-CROS-Recal.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3OBJETIVOS3INSTANCIAS/Classificador-CROS.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3OBJETIVOS3INSTANCIAS/Classificador.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3OBJETIVOS3INSTANCIAS/DIFICIL.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3OBJETIVOS3INSTANCIAS/FACIL.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3OBJETIVOS3INSTANCIAS/MEDIO.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3OBJETIVOS3INSTANCIAS/MUITODIFICIL.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FACIL-250-10" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FACIL-250-10-10000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FACIL-250-10-10000.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FACIL-250-10-20000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FACIL-250-10-20000.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FACIL-250-10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MUITODIFICIL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MUITODIFICIL-250-10-1000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MUITODIFICIL-250-10-1000.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MUITODIFICIL.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/.ipynb_checkpoints/Classificador-CROS-1000-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/.ipynb_checkpoints/Classificador-CROS-MEDIAF1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/.ipynb_checkpoints/Classificador-CROS-Precision-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/.ipynb_checkpoints/Classificador-CROS-Recal-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/.ipynb_checkpoints/Classificador-CROS-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/Classificador-CROS-1000.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/Classificador-CROS-MEDIAF1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/Classificador-CROS-Precision.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/Classificador-CROS-Recal.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/Classificador-CROS.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/Classificador.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/DIFICIL.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/FACIL.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/MEDIO.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boxplots/MUITODIFICIL.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classificador.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3OBJETIVOS/Classificador-CROS-MEDIAF1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/3OBJETIVOS/Classificador-CROS-MEDIAF1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3OBJETIVOS/Classificador-CROS-Precision.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/3OBJETIVOS/Classificador-CROS-Precision.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3OBJETIVOS/Classificador-CROS-Recal.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/3OBJETIVOS/Classificador-CROS-Recal.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3OBJETIVOS/Classificador-CROS.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/3OBJETIVOS/Classificador-CROS.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FACIL" beforeDir="false" afterPath="$PROJECT_DIR$/FACIL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FACIL.csv" beforeDir="false" afterPath="$PROJECT_DIR$/FACIL.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GerarImagem.py" beforeDir="false" afterPath="$PROJECT_DIR$/GerarImagem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MOGD-Ferramenta-Pickle-SEMINTERACAO-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-Ferramenta-Pickle-SEMINTERACAO2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MOGD-Ferramenta-Pickle-SEMINTERACAO.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-Ferramenta-Pickle-SEMINTERACAO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/READ-pickle-2OBJ.py" beforeDir="false" afterPath="$PROJECT_DIR$/READ-pickle-2OBJ.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MOGD-Ferramenta.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOGD-Ferramenta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/READ-pickle-3OBJ.py" beforeDir="false" afterPath="$PROJECT_DIR$/READ-pickle-3OBJ.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +92,27 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.MOGD-Ferramenta-Pickle-SEMINTERACAO">
+    <configuration name="GerarImagem" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MultiObjetivo-GeradordeDatasets" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GerarImagem.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="MOGD-Ferramenta-Pickle-SEMINTERACAO" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MultiObjetivo-GeradordeDatasets" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -195,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MOGD-Ferramenta-Pickle-SEMINTERACAO4obj-2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="MOGD-Ferramenta" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MultiObjetivo-GeradordeDatasets" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -207,28 +146,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-Ferramenta-Pickle-SEMINTERACAO4obj-2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MOGD-Ferramenta-Pickle-SEMINTERACAO4obj" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MultiObjetivo-GeradordeDatasets" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-Ferramenta-Pickle-SEMINTERACAO4obj.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOGD-Ferramenta.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -282,17 +200,17 @@
     <list>
       <item itemvalue="Python.MOGD-Ferramenta-Pickle-SEMINTERACAO" />
       <item itemvalue="Python.READ-pickle-3OBJ" />
-      <item itemvalue="Python.MOGD-Ferramenta-Pickle-SEMINTERACAO4obj" />
       <item itemvalue="Python.READ-pickle-4OBJ" />
-      <item itemvalue="Python.MOGD-Ferramenta-Pickle-SEMINTERACAO4obj-2" />
+      <item itemvalue="Python.GerarImagem" />
+      <item itemvalue="Python.MOGD-Ferramenta" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.MOGD-Ferramenta-Pickle-SEMINTERACAO" />
+        <item itemvalue="Python.MOGD-Ferramenta" />
         <item itemvalue="Python.READ-pickle-3OBJ" />
+        <item itemvalue="Python.GerarImagem" />
         <item itemvalue="Python.READ-pickle-4OBJ" />
-        <item itemvalue="Python.MOGD-Ferramenta-Pickle-SEMINTERACAO4obj" />
-        <item itemvalue="Python.MOGD-Ferramenta-Pickle-SEMINTERACAO4obj-2" />
       </list>
     </recent_temporary>
   </component>
@@ -461,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593748196373</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Inicial">
+      <created>1594264328966</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1594264328967</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -478,35 +403,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="624" y="201" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594187207169" />
-    <state x="429" y="0" width="1052" height="801" key="CommitChangelistDialog2" timestamp="1593748193248">
+    <state x="429" y="0" width="1022" height="851" key="CommitChangelistDialog2" timestamp="1594264318559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="343" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585547597839" />
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593748193248" />
-    <state x="743" y="278" width="424" height="479" key="FileChooserDialogImpl" timestamp="1585784993606">
+    <state x="429" y="0" width="1022" height="851" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594264318559" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1594449206773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="743" y="278" width="424" height="479" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585784993606" />
-    <state width="1889" height="258" key="GridCell.Tab.0.bottom" timestamp="1594211420083">
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594449206773" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center" timestamp="1594449206773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1169" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585548284508" />
-    <state width="1889" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594211420083" />
-    <state width="1889" height="258" key="GridCell.Tab.0.center" timestamp="1594211420083">
+    <state width="1899" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594449206773" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left" timestamp="1594449206773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1169" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585548284507" />
-    <state width="1889" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594211420083" />
-    <state width="1889" height="258" key="GridCell.Tab.0.left" timestamp="1594211420083">
+    <state width="1899" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594449206773" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right" timestamp="1594449206773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1169" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585548284506" />
-    <state width="1889" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594211420083" />
-    <state width="1889" height="258" key="GridCell.Tab.0.right" timestamp="1594211420083">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1169" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585548284507" />
-    <state width="1889" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594211420083" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594449206773" />
     <state width="1889" height="339" key="GridCell.Tab.1.bottom" timestamp="1593919137461">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -523,23 +439,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1889" height="339" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593919137461" />
-    <state x="464" y="155" key="SettingsEditor" timestamp="1585554916407">
+    <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1594264350482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="464" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585554916407" />
-    <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1593748204136">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="444" y="202" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585547606060" />
-    <state x="555" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593748204136" />
+    <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594264350482" />
     <state x="578" y="309" width="744" height="412" key="git4idea.merge.GitPullDialog" timestamp="1591760026758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="578" y="309" width="744" height="412" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591760026758" />
-    <state x="623" y="228" width="672" height="678" key="search.everywhere.popup" timestamp="1585698893796">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="228" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585698893796" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

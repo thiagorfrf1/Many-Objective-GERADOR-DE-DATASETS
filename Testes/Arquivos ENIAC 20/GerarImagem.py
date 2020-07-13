@@ -33,7 +33,7 @@ from rpy2.robjects.packages import importr
 from rpy2.robjects import IntVector, Formula
 pandas2ri.activate()
 
-filename = "CEN2-MUITODIFICIL-1-2-3-100-5000GER-n_features=2"
+filename = "MUITODIFICIL"
 
 dataFrame = pd.read_csv(str(filename)+".csv", index_col=False)
 

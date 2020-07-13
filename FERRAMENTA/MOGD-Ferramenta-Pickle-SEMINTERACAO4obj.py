@@ -4,8 +4,11 @@ import numpy as np
 import pandas as pd
 import random
 import matplotlib.pyplot as plt
+import multiprocessing
 import pickle
-
+from sklearn.datasets import make_blobs, make_moons, make_circles
+from matplotlib import pyplot
+from pandas import DataFrame
 
 from deap import base
 from deap import creator
@@ -19,41 +22,117 @@ from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage as STAP
 from rpy2.robjects import IntVector, Formula
 pandas2ri.activate()
 
-N_ATTRIBUTES = 101
-cont = 0
-bobj = 0.4
+globalBalance = 0.22
+globalLinear = 0.22
+globalN1 = 0.22
+globalN2 = 0.22
+globalt2 = 0.07
+globalf1 = 0.07
 
-NOBJ = 4
+cont = 0
 P = [12]
 SCALES = [1]
-
-
-NGEN = 3500
+ok = "0"
+NGEN = 3000
 CXPB = 0.7
 MUTPB = 0.2
 INDPB = 0.05
-POP = 50
-filename = "novo 1236 - NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
-print("Class imbalance C2 = 1")
-print("Linearity L2 = 2")
-print("Neighborhood N2 = 3")
-print("Network ClsCoef = 4")
-print("Dimensionality T2 = 5")
-print("Feature-based F1 = 6")
+POP = 100
+dataset = "3"
+n_instancias = 100
+n_features = "2"
+filename = "4OBJE-DIFICIL"+str(n_instancias)+"-"+str(NGEN)+"GER"
+centers = 1
+metricas = "1 2 3 4"
+noise = 0.05
 
-metricas = input("Escolha quais métricas deseja otimizar (separe com espaço)")
+while ok == "0":
+    #print("Escolha que tipo de base deseja gerar:")
+    #print("Escolha 1 - Para bolhas de pontos com uma distribuição gaussiana.")
+    #print("Escolha 2 - Para gerar um padrão de redemoinho, ou duas luas.")
+    #print("Escolha 3 - Para gerar um problema de classificação com conjuntos de dados em círculos concêntricos.")
+
+    #dataset = input("Opção 1 - 2  - 3: ")
+
+    #n_instancias = input("Quantas instancias (Exemplos) deseja utilizar? ")
+    #n_features = input("Quantos atributos (features) deseja utilizar? ")
+
+    if (dataset == "1"):
+        #centers = input("Quantas bolhas (centers) deseja utilizar?")
+        #print(type(centers))
+        X, y = make_blobs(n_samples=int(n_instancias), centers=int(centers), n_features=int(n_features))
+        if n_features == "2":
+            df = DataFrame(dict(x=X[:, 0], y=X[:, 1], label=y))
+        else:
+            #df = DataFrame(dict(x=X[:, 0], y=X[:, 1], z=X[:, 2], label=y))
+            df = DataFrame(X)
+            df["label"] = y
+            print("DF")
+            print(df)
+        colors = {0: 'red', 1: 'blue', 2: 'orange'}  # , 2:'green', 3:'orange', 4:'pink'}
+        fig, ax = pyplot.subplots()
+        grouped = df.groupby('label')
+        #for key, group in grouped:
+            #group.plot(ax=ax, kind='scatter', x='x', y='y', label=key, color=colors[key])
+        print("X")
+        print(X)
+        print("y")
+        print(y)
+        pyplot.show()
+        #ok = input("Esse é o dataset que deseja utilizar? 1 - sim / 0 - não ")
+        ok = "1"
+
+    if (dataset == "2"):
+        #noise = input("Quanto de ruido deseja utilizar? entre 0 e 1")
+        X, y = make_moons(n_samples=int(n_instancias), noise=float(noise), n_features=int(n_features))
+        # scatter plot, dots colored by class value
+        df = DataFrame(dict(x=X[:, 0], y=X[:, 1], label=y))
+        colors = {0: 'red', 1: 'blue'}
+        fig, ax = pyplot.subplots()
+        grouped = df.groupby('label')
+        for key, group in grouped:
+            group.plot(ax=ax, kind='scatter', x='x', y='y', label=key, color=colors[key])
+        print(X)
+        print(y)
+        pyplot.show()
+        #ok = input("Esse é o dataset que deseja utilizar? 1 - sim / 0 - não ")
+        ok = "1"
+
+    if (dataset == "3"):
+        # noise = input("Quanto de ruido deseja utilizar? entre 0 e 1")
+        X, y = make_circles(n_samples=int(n_instancias), noise=float(noise))
+        # scatter plot, dots colored by class value
+        df = DataFrame(dict(x=X[:, 0], y=X[:, 1], label=y))
+        colors = {0: 'red', 1: 'blue'}
+        fig, ax = pyplot.subplots()
+        grouped = df.groupby('label')
+
+        for key, group in grouped:
+            group.plot(ax=ax, kind='scatter', x='x', y='y', label=key, color=colors[key])
+        pyplot.show()
+        #ok = input("Esse é o dataset que deseja utilizar? 1 - sim / 0 - não ")
+        ok = "1"
+
+
+#print("Escolha quais métricas deseja otimizar (separe com espaço)")
+#print("Class imbalance C2 = 1")
+#print("Linearity L2 = 2")
+#print("Neighborhood N2 = 3")
+#print("Network ClsCoef = 4")
+#print("Dimensionality T2 = 5")
+#print("Feature-based F1 = 6")
+
+#metricas = input("Métrica: ")
 
 metricasList = metricas.split()
-20884
-objetivos = input("Escolha os valores que deseja alcançar para cada métrica")
-objetivosList = objetivos.split()
+N_ATTRIBUTES = int(n_instancias)
+NOBJ = len(metricasList)
 
-globalBalance = 0.25
-globalLinear = 0.25
-globalN2 = 0.25
-globalClsCoef = 0.25
-globalt2 = 0.25
-globalf1 = 0.25
+#objetivos = input("Escolha os valores que deseja alcançar para cada métrica")
+#objetivosList = objetivos.split()
+
+
+
 
 dic = {}
 
@@ -1758,15 +1837,15 @@ def my_evaluate(individual):
         linearity = linearityVector.rx(1)
         vetor.append(abs(globalLinear - linearity[0][0]))
     if ("3" in metricasList):
+        ## -- neighborhood N1
+        n1Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N1", summary="return")
+        n1 = n1Vector.rx(1)
+        vetor.append(abs(globalN1 - n1[0][0]))
+    if ("4" in metricasList):
         ## -- neighborhood N2
         n2Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N2", summary="return")
         n2 = n2Vector.rx(1)
         vetor.append(abs(globalN2 - n2[0][0]))
-    if ("4" in metricasList):
-        ## -- Network ClsCoef
-        ClsCoefVector = stringr_c.network_formula(fmla, dataFrame, measures="ClsCoef", summary="return")
-        ClsCoef = ClsCoefVector.rx(1)
-        vetor.append(abs(globalClsCoef - ClsCoef[0][0]))
     if ("5" in metricasList):
         ## -- Dimensionality T2
         t2Vector = stringr_c.dimensionality_formula(fmla, dataFrame, measures="T2", summary="return")
@@ -1778,7 +1857,14 @@ def my_evaluate(individual):
         f1 = f1Vector.rx(1)
         vetor.append(abs(globalf1 - f1[0][0]))
     ## --
-    return vetor[0], vetor[1], vetor[2], vetor[3],
+    if(len(vetor) == 1):
+        return vetor[0],
+    if(len(vetor) == 2):
+        return vetor[0], vetor[1],
+    elif(len(vetor) == 3):
+        return vetor[0], vetor[1], vetor[2],
+    elif(len(vetor) == 4):
+        return vetor[0], vetor[1], vetor[2], vetor[3],
 
 
 def print_evaluate(individual):
@@ -1798,7 +1884,7 @@ def print_evaluate(individual):
         vetor.append(linearity[0][0])
     if ("3" in metricasList):
         ## -- neighborhood N2
-        n2Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N2", summary="return")
+        n2Vector = stringr_c.neighborhood_formula(fmla, dataFrame, measures="N1", summary="return")
         n2 = n2Vector.rx(1)
         vetor.append(n2[0][0])
     if ("4" in metricasList):
@@ -1817,7 +1903,15 @@ def print_evaluate(individual):
         f1 = f1Vector.rx(1)
         vetor.append(f1[0][0])
     ## --
-    return vetor[0], vetor[1], vetor[2], vetor[3],
+    if(len(vetor) == 1):
+        return vetor[0],
+    if(len(vetor) == 2):
+        return vetor[0], vetor[1],
+    elif(len(vetor) == 3):
+        return vetor[0], vetor[1], vetor[2],
+    elif(len(vetor) == 4):
+        return vetor[0], vetor[1], vetor[2], vetor[3],
+
 
 
 creator.create("FitnessMin", base.Fitness, weights=(-1.0,)*NOBJ)
@@ -1836,8 +1930,9 @@ toolbox.register("mutate", tools.mutShuffleIndexes, indpb=INDPB)
 toolbox.register("select", tools.selNSGA3, ref_points=ref_points)
 
 def main(seed=None):
-    random.seed(seed)
-
+    random.seed(64)
+    pool = multiprocessing.Pool(processes=12)
+    toolbox.register("map", pool.map)
     # Initialize statistics object
     stats = tools.Statistics(lambda ind: ind.fitness.values)
     stats.register("avg", np.mean, axis=0)
@@ -1860,7 +1955,6 @@ def main(seed=None):
 
     logbook.record(gen=0, evals=len(invalid_ind), **record)
     print(logbook.stream)
-
     # Begin the generational process
     for gen in range(1, NGEN):
         offspring = algorithms.varAnd(pop, toolbox, CXPB, MUTPB)
@@ -1871,44 +1965,32 @@ def main(seed=None):
             ind.fitness.values = fit
         # Select the next generation population from parents and offspring
         pop = toolbox.select(pop + offspring, POP)
-
-        for x in range(len(offspring)):
-            dic[print_evaluate(offspring[x])] = offspring[x]
-            outfile = open(filename, 'wb')
-            pickle.dump(dic, outfile)
-            outfile.close()
         # Compile statistics about the new population
         record = stats.compile(pop)
         logbook.record(gen=gen, evals=len(invalid_ind), **record)
         print(logbook.stream)
     return pop, logbook
-
 if __name__ == '__main__':
     cont1 = 0
     cont0 = 0
-    dataFrame = pd.read_csv(str(N_ATTRIBUTES) + '.csv')
-    dataFrame = dataFrame.drop('c0', axis=1)
+    #dataFrame = pd.read_csv(str(N_ATTRIBUTES) + '.csv')
+    #dataFrame = dataFrame.drop('c0', axis=1)
+    dataFrame = df
     results = main()
-    infile = open(filename, 'rb')
-    new_dict = pickle.load(infile)
-    print("NEW DICT")
-    print(new_dict)
-    infile.close()
     print("logbook")
-    print(results[1])
-    robjects.globalenv['dataFrame'] = dataFrame
-    dataFrame.to_csv(
-        str(N_ATTRIBUTES) + '_' + str(bobj).replace('.', ',') + '_' + str(globalBalance).replace('.', ',') + '.csv',
-        index=False)
-    dataFrame.head(N_ATTRIBUTES)
+    print(results[0][0])
+    for x in range(len(results[0])):
+        dic[print_evaluate(results[0][x])] = results[0][x]
+        outfile = open(filename, 'wb')
+        pickle.dump(dic, outfile)
+        outfile.close()
 
-    df = pd.read_csv(
-        str(N_ATTRIBUTES) + '_' + str(bobj).replace('.', ',') + '_' + str(globalBalance).replace('.', ',') + ".csv")
-    colors = {0: 'red', 1: 'blue'}
-    markers = {0: '+', 1: '_'}
-    fig, ax = plt.subplots()
+    df['label'] = results[0][0]
+    df.to_csv(str(filename)+".csv")
+    fig, ax = pyplot.subplots()
     grouped = df.groupby('label')
-    plt.rcParams['figure.figsize'] = (11, 7)
     for key, group in grouped:
-        group.plot(ax=ax, kind='scatter', marker=markers[key], x='1', y='2', label=key, color=colors[key])
-    plt.show()
+        group.plot(ax=ax, kind='scatter', x='x', y='y', label=key, color=colors[key])
+    print(X)
+    print(y)
+    pyplot.show()
