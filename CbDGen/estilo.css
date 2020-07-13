@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02/07/2020, 15:28:52
+    Author     : thiago
+*/
+
+table td h4{
+    font-size: 20px;
+    text-align: left;
+    
+}
+
+table td h3{
+    font-size: 20px;
+}
+
+table td{
+}
+
+form h2{
+    font-size: 25px;
+    
+}
+
+.navbar {
+    min-height: 1000px;
+}
+
+table td h5{
+    font-size: 50px;
+}
