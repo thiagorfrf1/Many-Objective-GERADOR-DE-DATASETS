@@ -39,12 +39,12 @@ MUTPB = 0.2
 INDPB = 0.05
 POP = 100
 dataset = "1"
-n_instancias = 250
+n_instancias = 100
 n_features = "10"
 filename = "FACIL-250-10-20000"
-centers = 1
+centers = 3
 metricas = "1 2 3"
-noise = 0.1
+noise = 0.03
 
 while ok == "0":
     #print("Escolha que tipo de base deseja gerar:")
@@ -64,7 +64,7 @@ while ok == "0":
         if n_features == "2":
             df = DataFrame(dict(x=X[:, 0], y=X[:, 1], label=y))
         else:
-            #df = DataFrame(dict(x=X[:, 0], y=X[:, 1], z=X[:, 2], label=y))
+            df = DataFrame(dict(x=X[:, 0], y=X[:, 1], z=X[:, 2], label=y))
             df = DataFrame(X)
             df["label"] = y
             print("DF")
@@ -72,8 +72,8 @@ while ok == "0":
         colors = {0: 'red', 1: 'blue', 2: 'orange'}  # , 2:'green', 3:'orange', 4:'pink'}
         fig, ax = pyplot.subplots()
         grouped = df.groupby('label')
-        #for key, group in grouped:
-            #group.plot(ax=ax, kind='scatter', x='x', y='y', label=key, color=colors[key])
+        for key, group in grouped:
+            group.plot(ax=ax, kind='scatter', x='x', y='y', label=key, color=colors[key])
         print("X")
         print(X)
         print("y")

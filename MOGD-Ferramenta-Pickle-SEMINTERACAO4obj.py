@@ -1931,7 +1931,7 @@ toolbox.register("select", tools.selNSGA3, ref_points=ref_points)
 
 def main(seed=None):
     random.seed(64)
-    pool = multiprocessing.Pool(processes=12)
+    pool = multiprocessing.Pool(processes=3)
     toolbox.register("map", pool.map)
     # Initialize statistics object
     stats = tools.Statistics(lambda ind: ind.fitness.values)

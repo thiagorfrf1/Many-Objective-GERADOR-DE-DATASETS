@@ -27,18 +27,18 @@ NOBJ = 4
 P = [12]
 SCALES = [1]
 
-NGEN = 2000
+NGEN = 5000
 CXPB = 0.7
 MUTPB = 0.2
 INDPB = 0.05
 POP = 50
 #filename = "NGEN=" + str(NGEN) + "-POP=" + str(POP) + "-CXPB=" + str(CXPB) + "-MUTPB=" + str(MUTPB) + "-INDPB=" + str(INDPB)
-filename = "048-035-035-0352000GER"
+filename = "007-007-007-0075000GER"
 
-globalBalance = 0.48
-globalLinear = 0.35
-globalN1 = 0.35
-globalN2 = 0.35
+globalBalance = 0.07
+globalLinear = 0.07
+globalN1 = 0.07
+globalN2 = 0.07
 
 dic = {}
 

@@ -22,7 +22,7 @@ from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage as STAP
 from rpy2.robjects import IntVector, Formula
 pandas2ri.activate()
 ARQUIVO = 101
-n_instancias = 101
+n_instancias = 500
 cont = 0
 P = [12]
 SCALES = [1]
@@ -34,11 +34,12 @@ INDPB = 0.05
 POP = 100
 dataset = "3"
 
-filename = "Ferramenta-1-2-"+str(n_instancias)+"-"+str(NGEN)+"GER"
 n_features = "2"
-centers = 3
+centers = 2
 metricas = "1 2"
-noise = 0.5
+noise = 0.2
+
+filename = "FACIL-Ferramenta-1-2-"+str(n_instancias)+"-"+str(NGEN)+"GER"
 
 globalBalance = 0.00
 globalLinear = 0.00
@@ -50,6 +51,10 @@ globalN2 = 0.07
 globalClsCoef = 0.07
 globalt2 = 0.07
 globalf1 = 0.07
+
+
+filename = "FACIL-Ferramenta-1-2-"+str(n_instancias)+"-"+str(NGEN)+"GER"
+
 
 while ok == "0":
     #print("Escolha que tipo de base deseja gerar:")

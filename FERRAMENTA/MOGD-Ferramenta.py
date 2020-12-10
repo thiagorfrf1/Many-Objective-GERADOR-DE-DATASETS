@@ -44,16 +44,16 @@ print("Feature-based F1 = 6")
 metricas = input("Escolha quais métricas deseja otimizar (separe com espaço)")
 
 metricasList = metricas.split()
-20884
+
 objetivos = input("Escolha os valores que deseja alcançar para cada métrica")
 objetivosList = objetivos.split()
 
-globalBalance = 0.25
-globalLinear = 0.25
-globalN2 = 0.25
-globalClsCoef = 0.25
-globalt2 = 0.25
-globalf1 = 0.25
+globalBalance = 0.07
+globalLinear = 0.07
+globalN2 = 0.07
+globalClsCoef = 0.07
+globalt2 = 0.07
+globalf1 = 0.07
 
 dic = {}
 
