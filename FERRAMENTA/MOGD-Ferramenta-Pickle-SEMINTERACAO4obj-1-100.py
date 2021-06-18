@@ -21,7 +21,7 @@ from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage as STAP
 from rpy2.robjects import IntVector, Formula
 pandas2ri.activate()
 
-globalBalance = 0.48
+globalBalance = 0.07
 globalLinear = 0.07
 globalN1 = 0.07
 globalN2 = 0.07
@@ -40,7 +40,7 @@ POP = 50
 dataset = "3"
 n_instancias = 100
 n_features = "2"
-filename = "PPGIA-MEDIO"+str(n_instancias)+"-"+str(NGEN)+"GER"
+filename = "PPGIA-FACIL"+str(n_instancias)+"-"+str(NGEN)+"GER"
 centers = 1
 metricas = "1 2 3 4"
 noise = 0.05

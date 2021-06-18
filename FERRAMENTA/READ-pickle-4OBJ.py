@@ -20,7 +20,7 @@ from rpy2.robjects import IntVector, Formula
 pandas2ri.activate()
 
 
-N_ATTRIBUTES = 101
+N_ATTRIBUTES = 500
 cont = 0
 P = [12]
 SCALES = [1]
@@ -32,18 +32,18 @@ MUTPB = 0.2
 INDPB = 0.05
 POP = 50
 
-globalBalance = 0.22
-globalLinear = 0.22
-globalN1 = 0.22
-globalN2 = 0.22
+globalBalance = 0.48
+globalLinear = 0.35
+globalN1 = 0.35
+globalN2 = 0.35
 globalt2 = 0.07
 globalf1 = 0.07
 
-filename = "PPGIA-DIFICIL100-10000GER"
+filename = "POP-400-PPGIA-MUITODIFICIL100-150GER"
 print("Class imbalance C2 = 1")
 print("Linearity L2 = 2")
-print("Neighborhood N2 = 3")
-print("Network ClsCoef = 4")
+print("Neighborhood N1 = 3")
+print("Neighborhood N2= 4")
 print("Dimensionality T2 = 5")
 print("Feature-based F1 = 6")
 

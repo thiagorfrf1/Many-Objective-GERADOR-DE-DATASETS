@@ -22,10 +22,10 @@ from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage as STAP
 from rpy2.robjects import IntVector, Formula
 pandas2ri.activate()
 
-globalBalance = 0.07
-globalLinear = 0.07
-globalN1 = 0.07
-globalN2 = 0.07
+globalBalance = 0.48
+globalLinear = 0.35
+globalN1 = 0.35
+globalN2 = 0.35
 globalt2 = 0.07
 globalf1 = 0.07
 
@@ -34,14 +34,14 @@ P = [12]
 SCALES = [1]
 ok = "0"
 NGEN = 5000
-CXPB = 0.5
+CXPB = 0.7
 MUTPB = 0.2
 INDPB = 0.05
 POP = 50
-dataset = "3"
+dataset = "2"
 n_instancias = 500
-n_features = "2"
-filename = "PPGIA-FACIL"+str(n_instancias)+"-"+str(NGEN)+"GER"
+n_features = "10"
+filename = "PPGIA-MUITODIFICIL"+str(n_instancias)+"-"+str(NGEN)+"GER"
 centers = 1
 metricas = "1 2 3 4"
 noise = 0.1
@@ -1931,7 +1931,7 @@ toolbox.register("select", tools.selNSGA3, ref_points=ref_points)
 
 def main(seed=None):
     random.seed(64)
-    pool = multiprocessing.Pool(processes=8)
+    pool = multiprocessing.Pool(processes=12)
     toolbox.register("map", pool.map)
     # Initialize statistics object
     stats = tools.Statistics(lambda ind: ind.fitness.values)

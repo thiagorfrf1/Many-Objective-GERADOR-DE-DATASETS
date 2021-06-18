@@ -33,24 +33,11 @@ from rpy2.robjects.packages import importr
 from rpy2.robjects import IntVector, Formula
 pandas2ri.activate()
 
-filename = "PPGIA-MUITODIFICIL100-3000GER"
+filename = "ALEATORIO-MUITODIFICIL100-5000GER"
 
 dataFrame = pd.read_csv(str(filename)+".csv", index_col=False)
 
 
-#teste = [0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0]
-
-#dataFrame.drop('c0', axis=1)
-
-#dataFrame['Label'] = teste
-    #robjects.globalenv['dataFrame'] = dataFrame
-    #array1 = np.array(teste)
-    #data = pd.DataFrame(teste)
-
-    # Criando o arquivo rotulado
-    # Usar esse arquivo no classificador
-    ##dataFrame.to_csv("3classes-1-2-100-500GER-n_features=2.csv")
-    ##dataFrame.head(N_ATTRIBUTES)
 print(dataFrame)
 df = dataFrame
 print(df)

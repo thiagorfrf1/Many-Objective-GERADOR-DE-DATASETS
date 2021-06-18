@@ -22,10 +22,10 @@ from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage as STAP
 from rpy2.robjects import IntVector, Formula
 pandas2ri.activate()
 
-globalBalance = 0.22
-globalLinear = 0.22
-globalN1 = 0.22
-globalN2 = 0.22
+globalBalance = 0.48
+globalLinear = 0.35
+globalN1 = 0.35
+globalN2 = 0.35
 globalt2 = 0.07
 globalf1 = 0.07
 
@@ -33,15 +33,15 @@ cont = 0
 P = [12]
 SCALES = [1]
 ok = "0"
-NGEN = 10000
+NGEN = 150
 CXPB = 0.7
 MUTPB = 0.2
 INDPB = 0.05
-POP = 50
+POP = 400
 dataset = "3"
-n_instancias = 500
+n_instancias = 100
 n_features = "2"
-filename = "PPGIA-DIFICIL"+str(n_instancias)+"-"+str(NGEN)+"GER"
+filename = "POP-400-PPGIA-MUITODIFICIL"+str(n_instancias)+"-"+str(NGEN)+"GER"
 centers = 1
 metricas = "1 2 3 4"
 noise = 0.1
